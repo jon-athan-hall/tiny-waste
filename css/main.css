@@ -56,20 +56,20 @@ header > h1 {
 
 nav {
   display: flex;
-  justify-content: center;
-  padding: .1em;
-  background-color: #999999;
-  font-size: .9rem;
-  text-transform: uppercase;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #003366; 
 }
 
 /*
  * The arrow selector means only anchor tags that are direct children of nav.
  */
-
-nav > a {
-  flex-grow: 1;
-  padding: 1em;
-  color: var(--header-text);
-  text-decoration: none;
-}
+ nav > a {
+   padding: .5em 0;
+   color: var(--header-text);
+   font-size: 1.5rem;
+   text-decoration: none;
+ }
