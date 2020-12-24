@@ -30,9 +30,9 @@ body {
 
 .logo {
   color: var(--white);
-  font-family: 'Averia Serif Libre';
+  font-family: 'Cabin Sketch';
   font-size: 2rem;
-  font-weight: 800;
+  font-weight: 400;
   text-transform: lowercase;
 }
 
@@ -76,12 +76,30 @@ h1 {
 h2 {
   margin: .25em 0;
   padding: .5em;
-  background-color: var(--dark-orange);
-  color: var(--gray);
+  color: var(--white);
   font-size: 1.75rem;
   text-align: center;
 }
 
+h2.green {
+  background-color: var(--green);
+}
+
+h2.aqua {
+  background-color: var(--aqua);
+}
+
+h2.blue {
+  background-color: var(--blue);
+}
+
+h2.orange {
+  background-color: var(--orange);
+}
+
+h2.dark-orange {
+  background-color: var(--dark-orange);
+}
 
 p {
   margin: 0;
