@@ -14,3 +14,102 @@
   --black: #2d2d2d;
 }
 
+body {
+  margin: 0;
+  color: var(--black);
+  font-family: 'Merriweather', 'Georgia', 'Times New Roman', Times, serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.banner {
+  padding: .5em 0;
+  background-image: linear-gradient(to bottom right, var(--aqua), var(--dark-orange));
+  text-align: center;
+}
+
+.logo {
+  color: var(--white);
+  font-family: 'Averia Serif Libre';
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: lowercase;
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+article {
+  padding: 1em 0;
+}
+
+article > header {
+  margin-bottom: 2.5em;
+  text-align: center;
+}
+
+article > header > time {
+  color: var(--black);
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h1, h2 {
+  margin: .25em 1em;
+  font-family: 'Amatic SC', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  padding-bottom: .25em;
+  border-bottom: 3px solid var(--aqua);
+  color: var(--green);
+  font-size: 3rem;
+}
+
+h2 {
+  margin: .25em 0;
+  padding: .5em;
+  background-color: var(--dark-orange);
+  color: var(--gray);
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+
+p {
+  margin: 0;
+  padding: 1em 2em;
+  line-height: 1.75em;
+}
+
+a, a:visited {
+  border-bottom: 1px solid var(--green);
+  color: var(--green);
+  text-decoration: none;
+  transition: all 300ms ease-in;
+}
+
+a:hover {
+  color: var(--aqua);
+}
+
+ol {
+  margin: 0;
+  padding: 1em 4em 1em 4.5em;
+}
+
+li {
+  padding-bottom: 1em;
+  line-height: 1.5em;
+}
+
+li:last-child {
+  padding-bottom: 0;
+}

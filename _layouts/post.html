@@ -4,12 +4,13 @@
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/post.css">
   </head>
   <body>
-    <header>
-      <div>{{ site.title }}</div>
+    <header class="banner">
+      <span class="logo">{{ site.title }}</span>
       <nav> 
         <a href="#">Reduce</a>
         <a href="#">Reuse</a>
@@ -21,18 +22,10 @@
       <article>
         <header>
           <h1>{{ page.title }}</h1>
-          <time>{{ page.date | date: "%B %-d, %Y - Week %U" }}</time>
+          <time>{{ page.date | date: "Week %U - %B %-d, %Y" }}</time>
         </header>
         
         {{ content }}
-
-      <footer>
-        <ul>
-          {% for tag in page.tags %}
-            <li>{{ tag }}</li>
-          {% endfor %}
-        </ul>
-      </footer>
 
       </article>
     </main>
