@@ -20,7 +20,6 @@ h1 {
 
 header {
   padding: .5em;
-  background-color: #003366;
   color: var(--header-text);
   text-transform: lowercase;
 }
@@ -31,7 +30,7 @@ header > h1 {
 
 .hero {
   padding: 5em 1em;
-  background: url(/assets/img/hero-background.jpg);
+  background-image: linear-gradient(to bottom right, var(--aqua), var(--dark-orange));
   background-size: cover;
   text-align: center;
 }
