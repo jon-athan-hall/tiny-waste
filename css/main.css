@@ -22,20 +22,17 @@ body {
   font-weight: 300;
 }
 
-.banner {
+.banner, .hero {
   padding: 1em;
   background-image: linear-gradient(to right, var(--aqua), var(--dark-orange));
   text-align: center;
 }
 
-.banner a {
-  display: block;
-  border: none;
-}
-
 .logo {
-  margin-top: .5em;
+  display: block;
+  margin: .5em auto;
   width: 50%;
+  border: none;
 }
 
 nav {
