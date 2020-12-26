@@ -28,8 +28,14 @@ body {
   text-align: center;
 }
 
+.banner a {
+  display: block;
+  border: none;
+}
+
 .logo {
-  
+  margin-top: .5em;
+  width: 50%;
 }
 
 nav {
