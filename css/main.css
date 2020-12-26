@@ -1,3 +1,5 @@
+@import "/css/post-preview.css";
+
 :root {
   /**
    * Colors
@@ -13,6 +15,11 @@
   --white: #ffffff;
   --black: #2d2d2d;
   --decorative-font-family: 'Amatic SC', Arial, Helvetica, sans-serif;
+  --section-padding: 0 1.5em;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
 }
 
 body {
@@ -49,7 +56,7 @@ article > header > time {
 }
 
 article > section {
-  padding: 0 1.5em;
+  padding: var(--section-padding);
 }
 
 h1, h2 {
@@ -108,7 +115,6 @@ a, a:visited {
   border-bottom: 1px solid var(--green);
   color: var(--green);
   text-decoration: none;
-  transition: all 300ms ease-in;
 }
 
 a:hover {
@@ -135,7 +141,7 @@ li:last-child {
   left: 0;
   right:0;
   padding: .75em;
-  background: var(--dark-orange);
+  background: var(--green);
   text-align: center;
 }
 
@@ -175,6 +181,5 @@ a.button {
   font-size: 1.5rem;  
   font-weight: 700;
   text-transform: uppercase;
-  transition: none;
 }
 

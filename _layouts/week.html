@@ -19,7 +19,7 @@
       <article>
         <header>
           <h1>{{ page.title }}</h1>
-          <h2>Week {{ page.week }}
+          <h2>Week {{ page.week }}</h2>
         </header>
         
         <section>
@@ -28,10 +28,10 @@
         
         {% assign week_posts = site.posts | where: "week", page.week %}
         {% for post in week_posts %}
-        <section>
-          <a href="{{ post.url }}">
-            <img src="/assets/posts/{{ post.image }}">
-            <h3>{{ post.title }}</h3>
+        <section class="post-preview">
+          <a class="post-preview__link-wrapper" href="{{ post.url }}">
+            <img class="post-preview__image" src="/assets/posts/{{ post.image }}">
+            <h3 class="post-preview__title">{{ post.title }}</h3>
           </a>
         </section>
         {% endfor %}
