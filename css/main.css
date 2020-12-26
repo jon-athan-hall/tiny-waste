@@ -22,9 +22,9 @@ body {
   font-weight: 300;
 }
 
-.banner, .hero {
+.banner {
   padding: 1em;
-  background-image: linear-gradient(to right, var(--aqua), var(--dark-orange));
+  background-image: linear-gradient(to bottom right, var(--yellow), var(--aqua));
   text-align: center;
 }
 
@@ -33,6 +33,21 @@ body {
   margin: .5em auto;
   width: 50%;
   border: none;
+}
+
+.hero {
+  margin: 3em 1em;
+}
+
+.hero img {
+  width: 75%;
+}
+
+.hero h1 {
+  margin: .25em 0;
+  color: var(--white);
+  border: none;
+  font-size: 2.5remx;
 }
 
 nav {
