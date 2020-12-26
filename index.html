@@ -3,6 +3,16 @@ layout: home
 ---
 <p>Hello World!</p>
 
+<h2>Weeks</h2>
+<ul>
+  {% for week in site.weeks %}
+   <li>
+     <a href="{{ week.url }}">{{ week.title }}</a>
+   </li>
+  {% endfor %}
+</ul>
+
+<h2>Posts</h2>
 <ul>
   {% for post in site.posts %}
    <li>
@@ -10,6 +20,3 @@ layout: home
    </li>
   {% endfor %}
 </ul>
-<section>
-  
-</section>
