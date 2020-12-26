@@ -1,6 +1,7 @@
 :root {
-  --header-text: #eeeeee;
-  --text: #333333;
+  /**
+   * Colors
+   */
   --blue: #1893b9;
   --light-blue: #cdf5fe;
   --aqua: #25d3d0;
@@ -15,69 +16,123 @@
 
 body {
   margin: 0;
-  padding: 0;
-  background-color: var(--background);
-  color: var(--text);
-  font-family: 'Amatic SC', cursive;
-  font-size: 20px;
+  color: var(--black);
+  font-family: 'Merriweather', 'Georgia', 'Times New Roman', Times, serif;
+  font-size: 16px;
+  font-weight: 300;
 }
 
-h1 {
-  margin: 0;
-  font-family: 'Amatic SC', 'Times New Roman', serif;
-}
-
-header {
-  padding: .5em;
-  color: var(--header-text);
-  text-transform: lowercase;
-}
-
-header > h1 {
-  font-size: 1rem;
-}
-
-.hero {
-  padding: 5em 1em;
-  background-image: linear-gradient(to right, var(--aqua), var(--dark-orange));
-  background-size: cover;
+.banner {
+  padding: .5em 0;
+  background-image: linear-gradient(to bottom right, var(--aqua), var(--dark-orange));
   text-align: center;
 }
 
-.hero > h1 {
-  font-size: 2.5rem;
-  text-shadow: 1px 1px 2px #000;
-}
-
-/*
- * use the little dot to select a specific class in the HTML
- */
-
-.button {
-  padding: .5em 1em;
-  background-color: var(--background);
-  border: 3px solid var(--text);
-  color: var(--text);
-  text-decoration: none;
-  text-transform: uppercase;
+.logo {
+  color: var(--white);
+  font-family: 'Cabin Sketch';
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: lowercase;
 }
 
 nav {
-  display: flex;
-  justify-content: space-around;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #003366; 
 }
 
-/*
- * The arrow selector means only anchor tags that are direct children of nav.
- */
- nav > a {
-   padding: .5em 0;
-   color: var(--header-text);
-   font-size: 1.5rem;
-   text-decoration: none;
- }
+
+article {
+  padding: 1em 0;
+}
+
+article > header {
+  margin-bottom: 2.5em;
+  text-align: center;
+}
+
+article > header > time {
+  color: var(--black);
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+article > section {
+  padding: 0 1.5em;
+}
+
+h1, h2 {
+  margin: .25em 1em;
+  font-family: 'Amatic SC', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  padding-bottom: .25em;
+  border-bottom: 3px solid var(--aqua);
+  color: var(--green);
+  font-size: 3rem;
+}
+
+h2 {
+  margin: 1.5em 0 .5em;
+  padding: .25em 1em;
+  background-color: var(--dark-orange);
+  color: var(--white);
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+h2.green {
+  background-color: var(--green);
+}
+
+h2.aqua {
+  background-color: var(--aqua);
+}
+
+h2.blue {
+  background-color: var(--blue);
+}
+
+h2.orange {
+  background-color: var(--orange);
+}
+
+h2.dark-orange {
+  background-color: var(--dark-orange);
+}
+
+p {
+  margin: 1em 0;
+  padding: 0;
+  line-height: 1.75em;
+}
+
+a, a:visited {
+  border-bottom: 1px solid var(--green);
+  color: var(--green);
+  text-decoration: none;
+  transition: all 300ms ease-in;
+}
+
+a:hover {
+  color: var(--aqua);
+}
+
+ol {
+  margin: 0;
+  padding: 1em 2em 1em 2.5em;
+}
+
+li {
+  padding-bottom: 1em;
+  line-height: 1.5em;
+}
+
+li:last-child {
+  padding-bottom: 0;
+}
