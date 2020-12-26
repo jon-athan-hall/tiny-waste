@@ -23,17 +23,13 @@ body {
 }
 
 .banner {
-  padding: .5em 0;
-  background-image: linear-gradient(to bottom right, var(--aqua), var(--dark-orange));
+  padding: 1em;
+  background-image: linear-gradient(to right, var(--aqua), var(--dark-orange));
   text-align: center;
 }
 
 .logo {
-  color: var(--white);
-  font-family: 'Cabin Sketch';
-  font-size: 2rem;
-  font-weight: 400;
-  text-transform: lowercase;
+  
 }
 
 nav {
