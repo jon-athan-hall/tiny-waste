@@ -17,6 +17,7 @@
 
 body {
   margin: 0;
+  padding-top: 4.6em;
   color: var(--black);
   font-family: 'Merriweather', 'Georgia', 'Times New Roman', Times, serif;
   font-size: 16px;
@@ -125,20 +126,28 @@ li:last-child {
 }
 
 .banner {
-  padding: 1em;
-  background-image: linear-gradient(to bottom right, var(--yellow), var(--aqua));
+  position: fixed;
+  top: 0;
+  left: 0;
+  right:0;
+  padding: .75em;
+  background: var(--dark-orange);
   text-align: center;
 }
 
 .logo {
   display: block;
-  margin: .5em auto;
+  margin: .5em auto 0;
   width: 50%;
   border: none;
 }
 
 .hero {
-  margin: 2em 0;
+  padding: 2em 0;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  background-image: linear-gradient(to bottom right, var(--yellow), var(--aqua));
 }
 
 .hero img {
@@ -146,10 +155,10 @@ li:last-child {
 }
 
 .hero h1 {
-  margin: .25em 0 1em;
   color: var(--white);
   border: none;
   font-size: 2.25rem;
+  text-align: center;
 }
 
 a.button {
