@@ -6,18 +6,19 @@
   padding: 1em;
   display: block;
   background-color: var(--green);
-  background-image: linear-gradient(to bottom, var(--orange), var(--green));
+  background-image: linear-gradient(to bottom, var(--gray), var(--green));
 }
 
 .post-preview__image {
-  margin: .5em 0;
+  margin: .2em 0 .5em;
+  padding: .5em;
   border: 4px solid var(--white);
 }
 
 .post-preview__title {
-  padding: .25em 0;
+  padding: .5em;
   margin: 0;
-  border: 3px solid var(--white);
+  border: 4px solid var(--white);
   color: var(--white);
   font-family: 'Amatic SC';
   font-size: 2rem;

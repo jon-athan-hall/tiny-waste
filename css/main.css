@@ -32,10 +32,26 @@ body {
 }
 
 nav {
+  margin: 1em 0 0;
+  padding: .5em;
   position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: var(--dark-orange);
+  font-family: var(--decorative-font-family);
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+a.nav {
+  border: none;
+  color: var(--white);
+  font-family: var(--decorative-font-family);
+  font-size: 1.5rem;  
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 
@@ -153,11 +169,11 @@ li:last-child {
 }
 
 .hero {
-  padding: 2em 0;
+  padding: 0;
   display: flex;
   flex-direction: column; 
   align-items: center;
-  background-image: linear-gradient(to bottom right, var(--yellow), var(--aqua));
+  background-image: linear-gradient(to bottom right, var(--gray), var(--green));
 }
 
 .hero img {
@@ -182,4 +198,5 @@ a.button {
   font-weight: 700;
   text-transform: uppercase;
 }
+
 
