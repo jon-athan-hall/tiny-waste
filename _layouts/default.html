@@ -8,17 +8,9 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <header>
-      <h1 class="logo">{{ site.title }}</h1>
-      <nav>
-        <a href="about.html">About</a>
-        <a href="#">Weeks</a>
-        <a href="#">Projects</a>
-        <a href="#">Reviews</a>
-      </nav>
-    </header>
+    {% include banner.html %}
+    {% include nav.html%}
     
     <section>{{ content }}</section>
-
-  </body>
+   </body>
 </html>

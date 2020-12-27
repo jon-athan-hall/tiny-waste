@@ -1,3 +1,4 @@
+@import "/css/nav.css";
 @import "/css/post-preview.css";
 
 :root {
@@ -24,36 +25,12 @@
 
 body {
   margin: 0;
-  padding-top: 4.6em;
+  padding: 4.6em 0 3em;
   color: var(--black);
   font-family: 'Merriweather', 'Georgia', 'Times New Roman', Times, serif;
   font-size: 16px;
   font-weight: 300;
 }
-
-nav {
-  margin: 1em 0 0;
-  padding: .5em;
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  background-color: var(--dark-orange);
-  font-family: var(--decorative-font-family);
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-a.nav {
-  border: none;
-  color: var(--white);
-  font-family: var(--decorative-font-family);
-  font-size: 1.5rem;  
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 
 article {
   padding: 1em 0;
@@ -169,7 +146,7 @@ li:last-child {
 }
 
 .hero {
-  padding: 0;
+  padding: 2em 0;
   display: flex;
   flex-direction: column; 
   align-items: center;
@@ -193,7 +170,7 @@ a.button {
   border-radius: .25em;
   border: none;
   color: var(--white);
-  font-family: var(--decorative-font-family);
+  font-family: 'Amatic SC';
   font-size: 1.5rem;  
   font-weight: 700;
   text-transform: uppercase;
