@@ -30,7 +30,7 @@
 
 body {
   margin: 0;
-  padding: 4.6em 0;
+  padding: 4.5em 0;
   color: var(--black);
   font-family: 'Merriweather', 'Georgia', 'Times New Roman', Times, serif;
   font-size: 16px;
@@ -138,6 +138,7 @@ li:last-child {
   top: 0;
   left: 0;
   right:0;
+  height: 4.5em;
   padding: .75em;
   background: var(--green);
   text-align: center;
@@ -151,11 +152,13 @@ li:last-child {
 }
 
 .hero {
-  padding: 2em 0;
+  padding: 6em 0;
   display: flex;
   flex-direction: column; 
   align-items: center;
-  background-image: linear-gradient(to bottom right, var(--gray), var(--green));
+  background: url(/assets/img/maine.png) no-repeat;
+  background-position: bottom right;
+  background-size: cover;
 }
 
 .hero img {
@@ -163,8 +166,11 @@ li:last-child {
 }
 
 .hero h1 {
-  color: var(--white);
+  margin: .25em 1em;
+  padding: .25em;
+  background-color: rgba(0, 0, 0, 0.5);
   border: none;
+  color: var(--white);
   font-size: 2.25rem;
   text-align: center;
 }
