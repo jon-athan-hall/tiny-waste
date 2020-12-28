@@ -3,11 +3,11 @@ layout: home
 ---
 {% assign about_post = site.posts.first %}
 
-<section class="post-preview">
-  <a class="post-preview__link-wrapper" href="{{ about_post.url }}">
-    <img class="post-preview__image" src="/assets/posts/{{ about_post.image }}">
-    <h3 class="post-preview__title">{{ about_post.title }}</h3>
-  </a>
+<section class="what-is">
+  <img class="what-is__image" src="/assets/posts/{{ about_post.image }}">
+  <h3 class="what-is__title">{{ about_post.title }}</h3>
+  <p>This year, I'm making one change per week to reduce the amount of waste I send to landfills.</p>
+  <a class="what-is__button" href="{{ about_post.url }}">Read More</a>
 </section>
 {% assign current_week = site.weeks.last %}
 

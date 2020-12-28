@@ -1,0 +1,27 @@
+.post-preview {
+  padding: 1em;
+}
+
+.post-preview__link-wrapper {
+  padding: 1em;
+  display: block;
+  background-color: var(--green);
+  background-image: linear-gradient(to bottom, var(--gray), var(--green));
+}
+
+.post-preview__image {
+  margin: .2em 0 .5em;
+  padding: .5em;
+  border: 4px solid var(--white);
+}
+
+.post-preview__title {
+  padding: .5em;
+  margin: 0;
+  border: 4px solid var(--white);
+  color: var(--white);
+  font-family: 'Amatic SC';
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}

@@ -1,5 +1,7 @@
 @import "/css/nav.css";
+@import "/css/what-is.css";
 @import "/css/post-preview.css";
+
 
 :root {
   /**
@@ -30,7 +32,7 @@
 
 body {
   margin: 0;
-  padding: 4.5em 0;
+  padding: 3.5em 0;
   color: var(--black);
   font-family: 'Merriweather', 'Georgia', 'Times New Roman', Times, serif;
   font-size: 16px;
@@ -138,17 +140,15 @@ li:last-child {
   top: 0;
   left: 0;
   right:0;
-  height: 4.5em;
-  padding: .75em;
+  height: 3.5em;
+  padding: .5em;
   background: var(--green);
   text-align: center;
 }
 
-.logo {
-  display: block;
-  margin: .5em auto 0;
-  width: 50%;
+.logo, .logo img {
   border: none;
+  height: 2.5em;
 }
 
 .hero {
