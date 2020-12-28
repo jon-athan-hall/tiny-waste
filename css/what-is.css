@@ -1,27 +1,24 @@
-.post-preview {
-  padding: 1em;
+.what-is {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3em;
 }
 
-.post-preview__link-wrapper {
-  padding: 1em;
-  display: block;
-  background-color: var(--green);
-  background-image: linear-gradient(to bottom, var(--gray), var(--green));
+.what-is__image {
+  border: 4px solid var(--gray);
 }
 
-.post-preview__image {
-  margin: .2em 0 .5em;
-  padding: .5em;
-  border: 4px solid var(--white);
-}
-
-.post-preview__title {
-  padding: .5em;
-  margin: 0;
-  border: 4px solid var(--white);
-  color: var(--white);
-  font-family: 'Amatic SC';
+.what-is__title {
+  color: var(--green);
   font-size: 2rem;
-  font-weight: 700;
-  text-align: center;
+}
+
+.what-is__text {
+  margin: .25em 1em;
+}
+
+.what-is__button{
+  margin-top: 1em;
+  background-color: violet;
 }

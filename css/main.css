@@ -59,7 +59,7 @@ article > section {
   padding: var(--section-padding);
 }
 
-h1, h2 {
+h1, h2, h3{
   margin: .25em 1em;
   font-family: var(--decorative-font-family);
   font-weight: 700;
@@ -185,6 +185,10 @@ a.button {
   font-size: 1.5rem;  
   font-weight: 700;
   text-transform: uppercase;
+}
+
+a.button:active {
+  background-image: linear-gradient(to top, var(--orange), var(--dark-orange));
 }
 
 
