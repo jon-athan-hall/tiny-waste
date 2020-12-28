@@ -1,3 +1,8 @@
+.post-previews {
+  display: flex;
+  flex-direction: column;
+}
+
 .post-preview {
   padding: 1em;
 }
@@ -7,6 +12,7 @@
   display: block;
   background-color: var(--green);
   background-image: linear-gradient(to bottom, var(--gray), var(--light-green));
+  text-decoration: none;
 }
 
 .post-preview__image {
@@ -27,11 +33,12 @@
 }
 
 @media (min-width: 32em) {
-  .what-is { 
+  .post-previews {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
-  .what-is__image {
-    width: 12em;
-    height: 12em;
+  .post-preview {
+    width: 50%;
   }
+}

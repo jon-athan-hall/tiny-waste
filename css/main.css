@@ -1,7 +1,7 @@
+@import "/css/base.css";
 @import "/css/nav.css";
 @import "/css/what-is.css";
 @import "/css/post-preview.css";
-
 
 :root {
   /**
@@ -43,7 +43,7 @@ body {
 
 article {
   padding: 1em 0;
-  max-width: 32em;
+  max-width: 64em;
   margin: 0 auto;
 }
 
@@ -115,16 +115,6 @@ img {
   max-width: 100%;
 }
 
-a, a:visited {
-  border-bottom: 1px solid var(--green);
-  color: var(--green);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--aqua);
-}
-
 ol {
   margin: 0;
   padding: 1em 2em 1em 2.5em;
@@ -179,20 +169,8 @@ li:last-child {
   text-align: center;
 }
 
-a.button {
-  padding: .5em 2em;
-  background-image: linear-gradient(to bottom, var(--orange), var(--dark-orange));
-  border-radius: .25em;
-  border: none;
-  color: var(--white);
-  font-family: 'Amatic SC';
-  font-size: 1.5rem;  
-  font-weight: 700;
-  text-transform: uppercase;
+@media (min-width: 32em) {
+  article > section {
+    padding: 0;
+  }
 }
-
-a.button:active {
-  background-image: linear-gradient(to top, var(--orange), var(--dark-orange));
-}
-
-

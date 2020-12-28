@@ -1,8 +1,7 @@
 ---
 layout: home
 ---
-{% assign about_post = site.posts.first %}
-
+{% assign about_post = site.posts.last %}
 <section class="what-is">
   <img class="what-is__image" src="/assets/posts/{{ about_post.image }}">
   <div class="what-is__container">
@@ -11,16 +10,19 @@ layout: home
     <a class="button what-is__button" href="{{ about_post.url }}">Read More</a>
   </div>
 </section>
+
 {% assign current_week = site.weeks.last %}
 
 <h2>{{ current_week.title }}</h2>
 
 {% assign week_posts = site.posts | where: "week", current_week.week %}
-{% for post in week_posts %}
-  <section class="post-preview">
-    <a class="post-preview__link-wrapper" href="{{ post.url }}">
-      <img class="post-preview__image" src="/assets/posts/{{ post.image }}">
-      <h3 class="post-preview__title">{{ post.title }}</h3>
-    </a>
-  </section>
-{% endfor %}
+<div class="post-previews">
+  {% for post in week_posts reversed %}
+    <section class="post-preview">
+      <a class="post-preview__link-wrapper" href="{{ post.url }}">
+        <img class="post-preview__image" src="/assets/posts/{{ post.image }}">
+        <h3 class="post-preview__title">{{ post.title }}</h3>
+      </a>
+    </section>
+  {% endfor %}
+</div>
