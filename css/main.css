@@ -6,11 +6,8 @@
 :root {
   /**
    * Colors
-   --green: #265537;
-  --light-green: #546954;
-  --light-grey: #c4c6c4;
-  --dark-grey: #3b3c3b;
-   */
+   
+
   --blue: #1893b9;
   --light-blue: #cdf5fe;
   --aqua: #25d3d0;
@@ -18,12 +15,19 @@
   --orange: #fa811d;
   --dark-orange: #e46138;
   --yellow: #fbd88b;
-  --gray: #e5e5e5;
-  --white: #ffffff;
-  --black: #2d2d2d;
-  --decorative-font-family: 'Amatic SC', Arial, Helvetica, sans-serif;
-  --section-padding: 0 1.5em;
+ 
+*/
 
+--green: #06724d;
+--light-green: #06d383;
+--orange: #d591a5; 
+--dark-orange: #e53e52;
+--gray: #e5e5e5;
+--medium-grey: #8e9492;
+--white: #ffffff;
+--black: #2d2d2d;
+--decorative-font-family: 'Amatic SC', Arial, Helvetica, sans-serif;
+--section-padding: 0 1.5em;
 }
 
 *, *:before, *:after {
@@ -69,7 +73,7 @@ h1, h2, h3{
 
 h1 {
   padding-bottom: .25em;
-  border-bottom: 3px solid var(--aqua);
+  border-bottom: 3px solid var(--light-green);
   color: var(--green);
   font-size: 3rem;
 }
@@ -77,7 +81,7 @@ h1 {
 h2 {
   margin: 1.5em 0 .5em;
   padding: .25em 1em;
-  background-color: var(--dark-orange);
+  background-color: var(--medium-grey);
   color: var(--white);
   font-size: 1.75rem;
   text-align: center;
@@ -88,11 +92,11 @@ h2.green {
 }
 
 h2.aqua {
-  background-color: var(--aqua);
+  background-color: var(--light-green);
 }
 
 h2.blue {
-  background-color: var(--blue);
+  background-color: var(--medium-grey);
 }
 
 h2.orange {
@@ -159,7 +163,7 @@ li:last-child {
   flex-direction: column; 
   align-items: center;
   background: url(/assets/img/maine.png) no-repeat;
-  background-position: bottom right;
+  background-position: center;
   background-size: cover;
 }
 
