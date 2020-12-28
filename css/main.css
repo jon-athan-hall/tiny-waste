@@ -1,5 +1,5 @@
 @import "/css/base.css";
-@import "/css/nav.css";
+@import "/css/header.css";
 @import "/css/what-is.css";
 @import "/css/post-preview.css";
 
@@ -127,22 +127,6 @@ li {
 
 li:last-child {
   padding-bottom: 0;
-}
-
-.banner {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right:0;
-  height: 3.5em;
-  padding: .5em;
-  background: var(--green);
-  text-align: center;
-}
-
-.logo, .logo img {
-  border: none;
-  height: 2.5em;
 }
 
 .hero {

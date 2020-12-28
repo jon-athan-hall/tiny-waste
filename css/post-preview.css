@@ -52,4 +52,8 @@
   .post-preview {
     width: 25%;
   }
+
+  .post-preview__title {
+    font-size: 1.5em;
+  }
 }
