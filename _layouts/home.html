@@ -9,15 +9,18 @@
   </head>
   <body>
     {% include banner.html %}
-    {% include nav.html%}
+    {% include nav.html %}
 
     <div class="hero">
       <h1>This year I'm resolving to shrink my waste</h1>
       <a class="button" href="#">Join Me</a>
     </div>
-  
-    <section>{{ content }}</section>
 
+    <main>
+      <article>
+        {{ content }}
+      </article>
+    </main>
   </body>
 </html>
 

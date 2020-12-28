@@ -4,7 +4,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: var(--dark-orange);
+  background-color: var(--green);
   bottom: 0;
   left: 0;
   right: 0;

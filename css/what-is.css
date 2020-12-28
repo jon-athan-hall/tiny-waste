@@ -1,12 +1,17 @@
 .what-is {
+  margin: 1.25em 1em;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 3em;
 }
 
 .what-is__image {
   border: 4px solid var(--gray);
+}
+
+.what-is__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .what-is__title {
@@ -19,6 +24,16 @@
 }
 
 .what-is__button{
-  margin-top: 1em;
-  background-color: violet;
+  margin-top: .5em;
+}
+
+@media (min-width: 32em) {
+  .what-is { 
+    flex-direction: row;
+  }
+
+  .what-is__image {
+    width: 12em;
+    height: 12em;
+  }
 }
