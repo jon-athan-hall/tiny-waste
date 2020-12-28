@@ -1,0 +1,14 @@
+@media (min-width: 32em) {
+  .post {
+    padding: 1em 2em;
+  }
+
+  .post h2 {
+    margin-bottom: 1em;
+  }
+
+  .post p, .post ol{
+    width: 32em;
+    margin: 1em auto;
+  }
+}
