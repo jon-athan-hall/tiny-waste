@@ -34,11 +34,22 @@
 
 @media (min-width: 32em) {
   .post-previews {
-    flex-direction: row;
     flex-wrap: wrap;
+    height: 1300px;
   }
 
   .post-preview {
     width: 50%;
+  }
+}
+
+@media (min-width: 64em) {
+  .post-previews {
+    flex-direction: row;
+    height: auto;
+  }
+  
+  .post-preview {
+    width: 25%;
   }
 }
