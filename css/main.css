@@ -17,10 +17,10 @@
 
 */
 
---green: #06724d;
---light-green: #06d383;
---orange: #d591a5; 
---dark-orange: #e53e52;
+--main: #06724d;
+--highlight: #23a97b;
+--light-accent: #dd6675; 
+--accent: #e53e52;
 --gray: #e5e5e5;
 --medium-grey: #8e9492;
 --white: #ffffff;
@@ -72,8 +72,8 @@ h1, h2, h3{
 
 h1 {
   padding-bottom: .25em;
-  border-bottom: 3px solid var(--light-green);
-  color: var(--green);
+  border-bottom: 3px solid var(--highlight);
+  color: var(--main);
   font-size: 3rem;
 }
 
@@ -86,24 +86,24 @@ h2 {
   text-align: center;
 }
 
-h2.green {
-  background-color: var(--green);
+h2.main {
+  background-color: var(--main);
 }
 
-h2.aqua {
-  background-color: var(--light-green);
+h2.highlight {
+  background-color: var(--highlight);
 }
 
-h2.blue {
+h2.medium-grey {
   background-color: var(--medium-grey);
 }
 
-h2.orange {
-  background-color: var(--orange);
+h2.light-accent {
+  background-color: var(--light-accent);
 }
 
-h2.dark-orange {
-  background-color: var(--dark-orange);
+h2.accent {
+  background-color: var(--accent);
 }
 
 p {

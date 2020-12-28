@@ -5,7 +5,7 @@
   right:0;
   height: 3.5em;
   padding: .5em;
-  background: var(--green);
+  background: var(--main);
   text-align: center;
 }
 
@@ -20,7 +20,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: var(--green);
+  background-color: var(--main);
   bottom: 0;
   left: 0;
   right: 0;

@@ -10,8 +10,8 @@
 .post-preview__link-wrapper {
   padding: 1em;
   display: block;
-  background-color: var(--green);
-  background-image: linear-gradient(to bottom, var(--gray), var(--light-green));
+  background-color: var(--main);
+  background-image: linear-gradient(to bottom, var(--gray), var(--highlight));
   text-decoration: none;
 }
 
