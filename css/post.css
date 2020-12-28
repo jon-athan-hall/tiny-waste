@@ -1,6 +1,19 @@
+.post header img {
+  display: block;
+  width: calc(100% - 2em);
+  margin: 1em;
+  border: 4px solid var(--gray);
+}
+
+
 @media (min-width: 32em) {
   .post {
     padding: 1em 2em;
+  }
+
+  .post header img {
+    width: 12em;
+    margin: 1em auto; 
   }
 
   .post h2 {
