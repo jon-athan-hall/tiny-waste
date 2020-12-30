@@ -154,6 +154,21 @@ li:last-child {
   text-align: center;
 }
 
+#mc_embed_signup_scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mc_embed_signup_scroll .email {
+  margin-bottom: .5em;
+  padding: .75em 1em;
+  width: 300px;
+  font-family: 'Merriweather', 'Times New Roman', Times, serif;
+  font-size: 1rem;
+
+}
+
 @media (min-width: 32em) {
   article > section {
     padding: 0;
