@@ -20,7 +20,7 @@
     margin-bottom: 1em;
   }
 
-  .post p, .post ol{
+  .post p, .post ol, .post ul {
     width: 32em;
     margin: 1em auto;
   }
