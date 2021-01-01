@@ -173,8 +173,12 @@ li:last-child {
   width: 300px;
   font-family: 'Merriweather', 'Times New Roman', Times, serif;
   font-size: 1rem;
-
 }
+
+.current-week-link {
+  text-decoration: none;
+}
+
 
 @media (min-width: 32em) {
   article > section {
