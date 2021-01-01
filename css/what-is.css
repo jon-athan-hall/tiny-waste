@@ -5,6 +5,10 @@
   max-width: 32em;
 }
 
+.what-is--week {
+  max-width: 40em;
+}
+
 .what-is__image {
   border: 6px solid var(--gray);
 }

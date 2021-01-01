@@ -24,11 +24,11 @@
 
         {% assign week_posts = site.posts | where: "week", page.week %}
         {% assign lead_post = week_posts.last %}
-        <section class="what-is">
+        <section class="what-is what-is--week">
           <img class="what-is__image" src="/assets/posts/{{ lead_post.image }}">
           <div class="what-is__container">
             <h3 class="what-is__title">{{ lead_post.title }}</h3>
-            <p class="what-is__text">{{ lead_post.excerpt }}...</p>
+            <p class="what-is__text">{{ lead_post.excerpt | strip_html }}</p>
             <a class="button what-is__button" href="{{ lead_post.url }}">Read More</a>
           </div>
         </section>
