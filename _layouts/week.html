@@ -21,17 +21,28 @@
         <section>
           <p>{{ content }}</p>
         </section>
-        
-        {% assign week_posts = site.posts | where: "week", page.week %}
-        {% for post in week_posts %}
-        <section class="post-preview">
-          <a class="post-preview__link-wrapper" href="{{ post.url }}">
-            <img class="post-preview__image" src="/assets/posts/{{ post.image }}">
-            <h3 class="post-preview__title">{{ post.title }}</h3>
-          </a>
-        </section>
-        {% endfor %}
 
+        {% assign week_posts = site.posts | where: "week", page.week %}
+        {% assign lead_post = week_posts.last %}
+        <section class="what-is">
+          <img class="what-is__image" src="/assets/posts/{{ lead_post.image }}">
+          <div class="what-is__container">
+            <h3 class="what-is__title">{{ lead_post.title }}</h3>
+            <p class="what-is__text">{{ lead_post.excerpt }}...</p>
+            <a class="button what-is__button" href="{{ lead_post.url }}">Read More</a>
+          </div>
+        </section>
+        
+        <div class="post-previews">
+          {% for post in week_posts reversed limit: 3 %}
+          <section class="post-preview post-preview--week">
+            <a class="post-preview__link-wrapper" href="{{ post.url }}">
+              <img class="post-preview__image" src="/assets/posts/{{ post.image }}">
+              <h3 class="post-preview__title">{{ post.title }}</h3>
+            </a>
+          </section>
+          {% endfor %}
+        </div>
       </article>
     </main>
   </body>

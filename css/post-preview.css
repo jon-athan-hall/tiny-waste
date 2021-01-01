@@ -53,6 +53,10 @@
     width: 25%;
   }
 
+  .post-preview--week {
+    width: 33.33333333333%;
+  }
+
   .post-preview__title {
     font-size: 1.5em;
   }
