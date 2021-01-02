@@ -137,6 +137,11 @@ li:last-child {
   padding-bottom: 0;
 }
 
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
 .hero {
   padding: 6em 0;
   display: flex;
