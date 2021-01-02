@@ -128,6 +128,16 @@ ol, ul {
   padding: 1em 2em 1em 2.5em;
 }
 
+.acronym {
+  list-style-type: none; 
+}
+
+.acronym li:first-letter {
+  background-color: var(--main);
+  color: var(--white);
+  font-size: 2rem;
+}
+
 li {
   padding-bottom: 1em;
   line-height: 1.5em;
