@@ -15,7 +15,7 @@ layout: home
 
 <a class="current-week-link" href="{{ current_week.url }}"><h2 class="accent">{{ current_week.title }}</h2></a>
 
-{% assign week_posts = site.posts | where: "week", current_week.week %}
+{% assign week_posts = site.posts | where: "week", current_week.number %}
 <div class="post-previews">
   {% for post in week_posts reversed %}
     <section class="post-preview">

@@ -16,14 +16,14 @@
       <article>
         <header>
           <h1>{{ page.title }}</h1>
-          <h2>Week {{ page.week }}</h2>
+          <h2>Week {{ page.number }}</h2>
         </header>
         
         <section>
           <p>{{ content }}</p>
         </section>
 
-        {% assign week_posts = site.posts | where: "week", page.week %}
+        {% assign week_posts = site.posts | where: "week", page.number %}
         {% assign lead_post = week_posts.last %}
         <section class="what-is what-is--week">
           <img class="what-is__image" src="/assets/posts/{{ lead_post.image }}">
