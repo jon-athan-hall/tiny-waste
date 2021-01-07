@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<section>
+  <ul>
+  {% assign make_posts = site.posts | where: "category", "make" %}
+  {% for post in make_posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+  </ul>
+</section>
