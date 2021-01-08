@@ -5,11 +5,11 @@
   border: 4px solid var(--gray);
 }
 
-.how-to {
+.pic-text {
   padding: 0;
 }
 
-.how-to li {
+.pic-text li {
   display: flex;
   flex-direction: column; 
   margin: 1.5em;
@@ -34,17 +34,17 @@
     margin: 1em auto;
   }
 
-  .how-to {
+  .pic-text {
     max-width: 50em;
   }
 
-  .how-to li {
+  .pic-text li {
     flex-direction: row;
     align-items: center;
     margin: 3em 0;
   }
 
-  .how-to li > * {
+  .pic-text li > * {
     padding: 1em;
     width: 50%;
   }
