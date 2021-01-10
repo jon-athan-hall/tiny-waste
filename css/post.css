@@ -15,6 +15,12 @@
   margin: 1.5em;
 }
 
+.post__letter {
+  padding: 1em;
+  margin: 0 2em;
+  background-color: var(--gray);
+}
+
 @media (min-width: 32em) {
   .post {
     padding: 1em 2em;
