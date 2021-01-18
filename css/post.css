@@ -54,4 +54,9 @@
     padding: 1em;
     width: 50%;
   }
+
+  .pic-text li > p{
+    border-left: .25em solid var(--highlight);
+    margin-left: 1em;
+  }
 }
