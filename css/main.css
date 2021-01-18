@@ -5,18 +5,6 @@
 @import "/css/post-preview.css";
 
 :root {
-  /**
-   * Colors
-  --blue: #1893b9;
-  --light-blue: #cdf5fe;
-  --aqua: #25d3d0;
-  --green: #128573;
-  --orange: #fa811d;
-  --dark-orange: #e46138;
-  --yellow: #fbd88b;
-
-*/
-
 --main: #06724d;
 --highlight: #23a97b;
 --light-accent: #dd6675; 
