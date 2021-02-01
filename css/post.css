@@ -9,7 +9,7 @@
   padding: 0;
 }
 
-.pic-text li {
+.pic-text > li {
   display: flex;
   flex-direction: column; 
   margin: 1.5em;
@@ -44,7 +44,7 @@
     max-width: 50em;
   }
 
-  .pic-text li {
+  .pic-text > li {
     flex-direction: row;
     align-items: center;
     margin: 3em 0;
