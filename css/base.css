@@ -1,26 +1,7 @@
-.link, .link:visited {
-  border-bottom: 1px solid var(--main);
-  color: var(--main);
-  text-decoration: none;
+html {
+  box-sizing: border-box;
 }
 
-.link:hover {
-  color: var(--gray);
-}
-
-.button {
-  padding: .5em 2em;
-  background-image: linear-gradient(to bottom, var(--light-accent), var(--accent));
-  border-radius: .25em;
-  border: none;
-  color: var(--white);
-  font-family: 'Amatic SC';
-  font-size: 1.5rem;  
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.button:active {
-  background-image: linear-gradient(to top, var(--light-accent), var(--accent));
+*, *:before, *:after {
+  box-sizing: inherit;
 }
