@@ -1,6 +1,6 @@
 .box {
   padding: var(--scale-1);
-  background-color: var(--light-green);
+  background-color: var(--lightest-green);
   color: var(--main-green);
 
   /**
@@ -21,5 +21,5 @@
 
 .box--invert {
   background-color: var(--dark-green);
-  color: var(--light-green);
+  color: var(--lightest-green);
 }

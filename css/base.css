@@ -70,6 +70,8 @@ h2, h3, h4, h5, h6 {
  * Not relying on media queries anymore.
  * Designing for the web is designing without seeing.
  * Element with assymetrical padding is trying to solve something else.
+ * Only set the CSS values needed to achieve the specific layout you are attempting.
+ * Exception based thinking with cascading.
  *
  * All the nifty CSS saved here.
  */
