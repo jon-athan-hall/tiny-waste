@@ -1,15 +1,15 @@
+.stack {
+  --space: var(--scale-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 /**
  * Only applied where the element is preceded by another element. This key
  * construct is known as the owl. Style the context, not the any individual element.
  */
- .stack {
-   --space: var(--scale-1);
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
- }
-
- .stack > * + * {
+.stack > * + * {
   margin-top: var(--space);
 }
 
