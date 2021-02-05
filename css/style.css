@@ -5,7 +5,8 @@
 /**
  * Layouts from every-layout.dev
  */
-@import "/css/stack.css";
-@import "/css/box.css";
-@import "/css/center.css";
-@import "/css/cluster.css";
+@import "/css/layouts/stack.css";
+@import "/css/layouts/box.css";
+@import "/css/layouts/center.css";
+@import "/css/layouts/cluster.css";
+@import "/css/layouts/sidebar.css";

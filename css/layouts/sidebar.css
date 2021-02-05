@@ -1,0 +1,29 @@
+.sidebar {
+  --space: var(--scale-1);
+  overflow: hidden;
+}
+
+.sidebar > * {
+  display: flex;
+  flex-wrap: wrap;
+
+  /**
+   * Same negative margin hack as cluster.css
+   */
+  margin: calc(var(--space) / 2 * -1);
+}
+
+.sidebar > * > * {
+  margin: calc(var(--space) / 2);
+  flex: grow;
+}
+
+.sidebar > * > :last-child {
+  flex-basis: 0;
+  flex-grow: 999;
+
+  /**
+   * Value at which the vertical layout turns on.
+   */
+  min-width: calc(50% - var(--space));
+}

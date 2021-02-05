@@ -68,7 +68,7 @@ h2, h3, h4, h5, h6 {
  * Composition over inheritance. Combine simple, independent parts.
  * Add utility classes as they come up. Don't make them all at first.
  * Not relying on media queries anymore.
- * Designing for the web is designing without seeing.
+ * Designing for the web is designing without seeing. Quantum layouts!
  * Element with assymetrical padding is trying to solve something else.
  * Only set the CSS values needed to achieve the specific layout you are attempting.
  * Exception based thinking with cascading.
