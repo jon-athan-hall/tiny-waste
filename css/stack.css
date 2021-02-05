@@ -1,0 +1,26 @@
+/**
+ * Only applied where the element is preceded by another element. This key
+ * construct is known as the owl. Style the context, not the any individual element.
+ */
+ .stack {
+   --space: var(--scale-1);
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+ }
+
+ .stack > * + * {
+  margin-top: var(--space);
+}
+
+.stack--large > * + * {
+  margin-top: var(--scale-2);
+}
+
+/**
+ * Overwrite the default space value on a specific element within the stack context.
+ */
+.stack__exception,
+.stack__exception + * {
+  --space: var(--scale-2);
+}

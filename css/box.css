@@ -1,0 +1,25 @@
+.box {
+  padding: var(--scale-1);
+  background-color: var(--light-green);
+  color: var(--main-green);
+
+  /**
+   * Always apply the transparent outline for possible high contrast modes
+   * enabled by users. If an actual border is used, copy its values for outline.
+   */
+  outline: 0.125rem solid transparent;
+  outline-offset: calc(0.125rem * -1);
+}
+
+/**
+ * Use inherit to apply color and background-color in one place, the
+ * .box element itself.
+ */
+.box * {
+  color: inherit;
+}
+
+.box--invert {
+  background-color: var(--dark-green);
+  color: var(--light-green);
+}

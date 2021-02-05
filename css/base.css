@@ -1,28 +1,42 @@
 :root {
   /**
+   * Harmonic scale values calculated based on the golden ratio. Replace with
+   * a pow() calculation once all browsers support more robust math functions.
+   */
+   --phi: 1.6180339887;
+   --scale-1: calc(var(--phi) * 1rem);
+   --scale-2: calc(var(--phi) * var(--scale-1));
+   --scale-3: calc(var(--phi) * var(--scale-2));
+   --scale-4: calc(var(--phi) * var(--scale-3));
+   --scale-5: calc(var(--phi) * var(--scale-4));
+
+  /**
+   * Color scheme variables all together.
+   */
+  --black: #2d2d2d;
+  --white: #fff;
+  --main-green: #06724d;
+  --other-green: #42957c;
+  --dark-green: #011a12;
+  --light-green: #83b9a7;
+  --lightest-green: #c1dcd3;
+
+  /**
    * Algorithm that uses viewpoint units to proportionately scale the
    * base font, while keeping the default value as the minimum.
    */
   --font-serif: 'Merriweather', sans-serif;
   --font-size-base: calc(1rem + 0.5vw);
   --measure: 64ch;
+  --border: 1px var(--dark-green);
 
-  /**
-   * Harmonic scale values calculated based on the golden ratio. Replace with
-   * a pow() calculation once all browsers support more robust math functions.
-   */
-  --phi: 1.6180339887;
-  --scale-1: calc(var(--phi) * 1rem);
-  --scale-2: calc(var(--phi) * var(--scale-1));
-  --scale-3: calc(var(--phi) * var(--scale-2));
-  --scale-4: calc(var(--phi) * var(--scale-3));
-  --scale-5: calc(var(--phi) * var(--scale-4));
+  color: var(--black);
+  font-family: var(--font-serif);
+  font-size: var(--font-size-base);
 }
 
 html {
   box-sizing: border-box;
-  font-family: var(--font-serif);
-  font-size: var(--font-size-base);
 }
 
 *, *:before, *:after {
@@ -50,17 +64,12 @@ h2, h3, h4, h5, h6 {
 }
 
 /**
- * Only applied where the element is preceded by another element. This key
- * construct is known as the owl. Style the context, not the any individual element.
- */
-.stack > * + * {
-  margin-top: var(--scale-1);
-}
-
-.stack--large > * + * {
-  margin-top: var(--scale-2);
-}
-
-/**
- * The em unit pertains to the immediate context rather than the outer document.
+ * Good Points:
+ * Composition over inheritance. Combine simple, independent parts.
+ * Add utility classes as they come up. Don't make them all at first.
+ * Not relying on media queries anymore.
+ * Designing for the web is designing without seeing.
+ * Element with assymetrical padding is trying to solve something else.
+ *
+ * All the nifty CSS saved here.
  */
