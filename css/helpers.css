@@ -1,0 +1,15 @@
+/**
+ * One thing we highly recommend is not including utility classes until
+ * you need them. You don’t want to send users any unused or redundant data.
+ */
+.font-size\:base {
+  font-size: var(--font-size-base) !important;
+}
+
+.max-width\:measure {
+  max-width: var(--measure) !important;
+}
+
+.max-width\:measure\/2 {
+  max-width: calc(var(--measure) / 2);
+}

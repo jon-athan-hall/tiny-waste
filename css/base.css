@@ -1,7 +1,66 @@
+:root {
+  /**
+   * Algorithm that uses viewpoint units to proportionately scale the
+   * base font, while keeping the default value as the minimum.
+   */
+  --font-serif: 'Merriweather', sans-serif;
+  --font-size-base: calc(1rem + 0.5vw);
+  --measure: 64ch;
+
+  /**
+   * Harmonic scale values calculated based on the golden ratio. Replace with
+   * a pow() calculation once all browsers support more robust math functions.
+   */
+  --phi: 1.6180339887;
+  --scale-1: calc(var(--phi) * 1rem);
+  --scale-2: calc(var(--phi) * var(--scale-1));
+  --scale-3: calc(var(--phi) * var(--scale-2));
+  --scale-4: calc(var(--phi) * var(--scale-3));
+  --scale-5: calc(var(--phi) * var(--scale-4));
+}
+
 html {
   box-sizing: border-box;
+  font-family: var(--font-serif);
+  font-size: var(--font-size-base);
 }
 
 *, *:before, *:after {
+  max-width: var(--measure);
   box-sizing: inherit;
 }
+
+/**
+ * Exception based styling for those elements without a measure cap.
+ */
+html, body, div, header, nav, main, footer {
+  max-width: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Amatic SC', serif;
+}
+
+h1 {
+  font-size: var(--scale-3);
+}
+
+h2, h3, h4, h5, h6 {
+  font-size: var(--scale-2);
+}
+
+/**
+ * Only applied where the element is preceded by another element. This key
+ * construct is known as the owl. Style the context, not the any individual element.
+ */
+.stack > * + * {
+  margin-top: var(--scale-1);
+}
+
+.stack--large > * + * {
+  margin-top: var(--scale-2);
+}
+
+/**
+ * The em unit pertains to the immediate context rather than the outer document.
+ */
