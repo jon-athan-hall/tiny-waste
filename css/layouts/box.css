@@ -1,7 +1,11 @@
 .box {
-  padding: var(--scale-1);
-  background-color: var(--lightest-green);
-  color: var(--main-green);
+  --space: var(--scale-1);
+  --light-color: var(--lightest-green);
+  --dark-color: var(--main-green);
+
+  padding: var(--space);
+  background-color: var(--light-color);
+  color: var(--dark-color);
 
   /**
    * Always apply the transparent outline for possible high contrast modes
@@ -20,6 +24,6 @@
 }
 
 .box--invert {
-  background-color: var(--dark-green);
-  color: var(--lightest-green);
+  background-color: var(--dark-color);
+  color: var(--light-color);
 }
