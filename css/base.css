@@ -63,6 +63,10 @@ h2, h3, h4, h5, h6 {
   font-size: var(--scale-2);
 }
 
+img {
+  max-width: 100%;
+}
+
 /**
  * Good Points:
  * Composition over inheritance. Combine simple, independent parts.

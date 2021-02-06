@@ -3,7 +3,7 @@
 @import "/css/helpers.css";
 
 /**
- * Layouts from every-layout.dev
+ * Layouts built from every-layout.dev book.
  */
 @import "/css/layouts/stack.css";
 @import "/css/layouts/box.css";
@@ -13,3 +13,4 @@
 @import "/css/layouts/switcher.css";
 @import "/css/layouts/cover.css";
 @import "/css/layouts/grid.css";
+@import "/css/layouts/frame.css";

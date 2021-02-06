@@ -1,0 +1,41 @@
+.frame {
+  --h: 9;
+  --w: 16;
+  position: relative;
+
+  /**
+   * No aspect-ratio property yet, but the intrinsic ratio is available
+   * through vertical padding, which is based on element's width.
+   */
+  padding-bottom: calc(var(--h) / var(--w) * 100%);
+}
+
+/**
+ * Position the content over the correctly sized frame.
+ */
+.frame > * {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  /**
+   * These settings will help crop any type of element.
+   */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/**
+ * Perform cropping on element's that need it. Use object-position
+ * to control the focal point around which the cropping is based.
+ */
+.frame > img,
+.frame > video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
