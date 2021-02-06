@@ -1,0 +1,22 @@
+.icon {
+  --space: var(--scale-1);
+  height: 0.75em;
+  width: 0.75em;
+
+  /**
+   * Upcoming unit that is based on a font. The ex unit is another
+   * good option if the accompanying text is all lowercase.
+   */
+  height: 1cap;
+  width: 1cap;
+  border-width: 0;
+}
+
+.with-icon {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.with-icon .icon {
+  margin-inline-end: var(--space);
+}

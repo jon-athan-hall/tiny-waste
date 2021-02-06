@@ -39,7 +39,7 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*, *::before, *::after {
   max-width: var(--measure);
   box-sizing: inherit;
   border-style: solid;
