@@ -72,6 +72,7 @@ h2, h3, h4, h5, h6 {
  * Element with assymetrical padding is trying to solve something else.
  * Only set the CSS values needed to achieve the specific layout you are attempting.
  * Exception based thinking with cascading.
+ * Layout components should try to solve just one problem.
  *
  * All the nifty CSS saved here.
  */

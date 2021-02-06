@@ -13,3 +13,7 @@
 .max-width\:measure\/2 {
   max-width: calc(var(--measure) / 2);
 }
+
+.text-align\:center {
+  text-align: center;
+}
