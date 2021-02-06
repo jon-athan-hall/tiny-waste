@@ -42,7 +42,10 @@ html {
 *, *::before, *::after {
   max-width: var(--measure);
   box-sizing: inherit;
-  border-style: solid;
+
+  /**
+   * border-style: solid;
+   */
 }
 
 /**
