@@ -1,0 +1,42 @@
+.switcher {
+  --space: var(--scale-1);
+  --threshold: 32rem;
+}
+
+.switcher > * {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(var(--space) / 2 * -1);
+}
+
+.switcher > * > * {
+  flex-grow: 1;
+
+  /**
+   * Large negative number is reduced to 0 in the browser, and then the 
+   * flex-grow is used. Large positive number makes the element span the
+   * entire width.
+   */
+  flex-basis: calc((var(--threshold) - (100% - var(--space))) * 999);
+  margin: calc(var(--space) / 2);
+}
+
+/**
+ * Selects every element starting from the 5th to last, plus all
+ * sibling elements after that one. There is no "5th to last" if
+ * there are only 4 elements.
+ */
+.switcher > * > :nth-last-child(n+5),
+.switcher > * > :nth-last-child(n+5) ~ * {
+  /**
+   * Go vertical if there are more than 4 child elements.
+  */
+  flex-basis: 100%;
+}
+
+/**
+ * Target one child element to take up more space than the others.
+.switcher > * > :nth-child(2) {
+  flex-grow: 2;
+}
+*/

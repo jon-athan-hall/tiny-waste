@@ -1,5 +1,6 @@
 .sidebar {
   --space: var(--scale-1);
+  --threshold: 50%;
   overflow: hidden;
 }
 
@@ -25,5 +26,5 @@
   /**
    * Value at which the vertical layout turns on.
    */
-  min-width: calc(50% - var(--space));
+  min-width: calc(var(--threshold) - var(--space));
 }
