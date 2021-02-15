@@ -77,7 +77,7 @@ img {
  * Add utility classes as they come up. Don't make them all at first.
  * Not relying on media queries anymore.
  * Designing for the web is designing without seeing. Quantum layouts!
- * Element with assymetrical padding is trying to solve something else.
+ * An element with assymetrical padding is trying to solve something else it shouldn’t.
  * Only set the CSS values needed to achieve the specific layout you are attempting.
  * Exception based thinking with cascading.
  * Layout components should try to solve just one problem.
