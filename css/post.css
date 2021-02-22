@@ -55,8 +55,17 @@
     width: 50%;
   }
 
-  .pic-text li > p{
+  .pic-text li > p {
     border-left: .25em solid var(--highlight);
     margin-left: 1em;
+  }
+
+  .duo {
+    margin: 2em auto;
+    max-width: 40em;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
   }
 }
