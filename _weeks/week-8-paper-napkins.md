@@ -1,5 +1,5 @@
 ---
 layout: week
-title: Napkins
+title: Paper Napkins
 number: 8
 ---
