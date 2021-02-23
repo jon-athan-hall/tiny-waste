@@ -15,11 +15,11 @@
    */
   --black: #2d2d2d;
   --white: #fff;
-  --main-green: #06724d;
-  --other-green: #42957c;
+  --green: #06724d;
+  --light-green: #42957c;
+  --lighter-green: #83b9a7;
+  --lightest-brand: #c1dcd3;
   --dark-green: #011a12;
-  --light-green: #83b9a7;
-  --lightest-green: #c1dcd3;
 
   /**
    * Algorithm that uses viewpoint units to proportionately scale the

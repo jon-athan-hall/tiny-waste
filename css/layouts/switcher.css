@@ -25,14 +25,12 @@
  * Selects every element starting from the 5th to last, plus all
  * sibling elements after that one. There is no "5th to last" if
  * there are only 4 elements.
- */
 .switcher > * > :nth-last-child(n+5),
 .switcher > * > :nth-last-child(n+5) ~ * {
-  /**
    * Go vertical if there are more than 4 child elements.
-  */
   flex-basis: 100%;
 }
+*/
 
 /**
  * Target one child element to take up more space than the others.

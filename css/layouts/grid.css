@@ -1,5 +1,9 @@
 .grid {
+  /**
+   * Set the minimum column width.
+   */
   --minimum: calc(var(--measure) / 4);
+
   display: grid;
   grid-gap: var(--scale-1);
 }

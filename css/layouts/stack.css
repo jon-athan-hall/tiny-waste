@@ -13,14 +13,14 @@
   margin-top: var(--space);
 }
 
-.stack--large > * + * {
+.stack.large > * + * {
   margin-top: var(--scale-2);
 }
 
 /**
  * Overwrite the default space value on a specific element within the stack context.
  */
-.stack__exception,
-.stack__exception + * {
+.stack.exception,
+.stack.exception + * {
   --space: var(--scale-2);
 }

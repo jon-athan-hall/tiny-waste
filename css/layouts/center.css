@@ -11,7 +11,7 @@
   padding-right: var(--scale-1);
 }
 
-.center--intrinsic {
+.center.intrinsic {
   /**
    * Other option is to use flexbox to center based on their natural widths.
    */

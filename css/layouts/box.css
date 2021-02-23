@@ -23,7 +23,7 @@
   color: inherit;
 }
 
-.box--invert {
+.box.invert {
   background-color: var(--dark-color);
   color: var(--light-color);
 }

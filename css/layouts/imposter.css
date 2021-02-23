@@ -4,6 +4,8 @@
   /**
    * This position property has absolute by default. Use
    * fixed if the positioning container is the viewport itself.
+   * This only works if there is an ancestor element with position
+   * set to absolute or relative.
    */
   position: var(--positioning, absolute);
   top: 50%;
