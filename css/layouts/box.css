@@ -23,6 +23,10 @@
   color: inherit;
 }
 
+.box.tight {
+  --space: var(--scale-half);
+}
+
 .box.invert {
   background-color: var(--dark-color);
   color: var(--light-color);
