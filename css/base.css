@@ -57,10 +57,20 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
 }
 
+h1, h2 {
+  color: var(--green);
+  font-size: var(--scale-up-2);
+}
+
 p {
   line-height: var(--scale-up-1);
 }
 
 img {
   max-width: 100%;
+}
+
+date {
+  color: var(--lighter-green);
+  font-size: var(--scale-down-1);
 }

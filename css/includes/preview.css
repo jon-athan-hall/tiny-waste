@@ -1,3 +1,15 @@
 .overlap {
+  position: relative;
+  top: calc(-1 * var(--scale-base));
+  left: var(--scale-base);
   display: block;
+  margin-top: 0;
+  width: fit-content;
+  background: var(--lighter-green);
+  color: var(--dark-green);
+  font-family: var(--font-sans-serif);
+  font-size: var(--scale-down-1);
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
 }

@@ -13,8 +13,12 @@
   margin-top: var(--space);
 }
 
+.stack > .ignore {
+  margin-top: 0;
+}
+
 .stack.large > * + * {
-  margin-top: var(--scale-2);
+  margin-top: var(--scale-up-2);
 }
 
 /**

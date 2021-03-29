@@ -1,9 +1,9 @@
 <img
   alt="{{ include.alt }}"
-  src="/assets/posts/{{ include.image }}.jpg"
+  src="/assets/posts/{{ include.image }}"
   srcset="
-    /assets/posts/{{ include.image }}-s.jpg 400w,
-    /assets/posts/{{ include.image }}-m.jpg 800w,
-    /assets/posts/{{ include.image }}-l.jpg 1600w,
-    /assets/posts/{{ include.image }}.jpg 2400w"
+    /assets/posts/{{ include.image | replace ".jpg", "-s.jpg" }} 400w,
+    /assets/posts/{{ include.image | replace ".jpg", "-m.jpg" }} 800w,
+    /assets/posts/{{ include.image | replace ".jpg", "-l.jpg" }} 1600w,
+    /assets/posts/{{ include.image }} 2400w"
 />
