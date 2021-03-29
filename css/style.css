@@ -1,20 +1,15 @@
 @import "/css/reset.css";
 @import "/css/base.css";
 @import "/css/helpers.css";
-@import "/css/preview.css";
 
 /**
- * Layouts built from every-layout.dev book.
+ * Reusable styles for layouts.
  */
-@import "/css/layouts/stack.css";
-@import "/css/layouts/box.css";
-@import "/css/layouts/center.css";
-@import "/css/layouts/cluster.css";
-@import "/css/layouts/sidebar.css";
-@import "/css/layouts/switcher.css";
-@import "/css/layouts/cover.css";
-@import "/css/layouts/grid.css";
-@import "/css/layouts/frame.css";
-@import "/css/layouts/reel.css";
-@import "/css/layouts/imposter.css";
-@import "/css/layouts/icon.css";
+ @import "/css/layouts/box.css";
+ @import "/css/layouts/stack.css";
+
+/**
+ * Specific styles for includes.
+ */
+@import "/css/includes/header.css";
+@import "/css/includes/preview.css";

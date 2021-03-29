@@ -6,25 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="description" content="{{ site.description }}">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&Lora&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
     {% include header.html %}
-
-    {% assign latest = site.posts.first %}
-    <main>
-      <div class="preview">
-        <img src="assets/posts/{{ latest.image }}.jpg" alt="{{ latest.alt }}" />
-        <div class="box stack">
-          <h1>{{ latest.title }}</h1>
-          <h2 href="#">{{ latest.category }}</h2>
-          <date>{{ latest.date | date_to_long_string }}</date>
-          <p>{{ latest.excerpt | strip_html }}</p>
-        </div>
-      </div>
+    <main class="box">
+      {% include preview.html post=site.posts.first %}
     </main>
    </body>
 </html>

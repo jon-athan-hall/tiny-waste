@@ -1,16 +1,13 @@
 :root {
   /**
-   * Harmonic scale values calculated based on the golden ratio. Replace with
-   * a pow() calculation once all browsers support more robust math functions.
+   * A couple of scale ratios to work with for consistent sizing.
    */
-   --phi: 1.5;
-   --scale-1: calc(1rem * var(--phi));
-   --scale-2: calc(var(--scale-1) * var(--phi));
-   --scale-3: calc(var(--scale-2) * var(--phi));
-   --scale-4: calc(var(--scale-3) * var(--phi));
-   --scale-5: calc(var(--scale-4) * var(--phi));
-   --scale-half: calc(1rem / var(--phi));
-   --scale-quarter: calc(var(--scale-half) * var(--phi));
+   --ratio: 1.5;
+   --scale-base: 1rem;
+   --scale-up-1: calc(var(--scale-base) * var(--ratio));
+   --scale-up-2: calc(var(--scale-up-1) * var(--ratio));
+   --scale-down-1: calc(var(--scale-base) / var(--ratio));
+   --scale-down-2: calc(var(--scale-down-1) / var(--ratio));
 
   /**
    * Color scheme variables all together.
@@ -27,10 +24,10 @@
    * Algorithm that uses viewpoint units to proportionately scale the
    * base font, while keeping the default value as the minimum.
    */
-  --font-serif: 'Lora', serif;
   --font-size-base: calc(1rem + 0.25vw);
+  --font-serif: serif;
+  --font-sans-serif: sans-serif;
   --measure: 64ch;
-  --border: 2px var(--dark-green);
 
   color: var(--black);
   font-family: var(--font-serif);
@@ -40,16 +37,11 @@
 html {
   box-sizing: border-box;
   height: 100vh;
-  background-image: linear-gradient(var(--green), var(--white));
 }
 
 *, *::before, *::after {
   max-width: var(--measure);
   box-sizing: inherit;
-
-  /**
-   * border-style: solid;
-   */
 }
 
 /**
@@ -60,40 +52,15 @@ html, body, div, header, nav, main, footer {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Amatic SC', sans-serif;
-  font-weight: 700;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: var(--scale-2);
+  font-family: var(--font-sans-serif);
+  font-size: var(--scale-up-1);
+  font-weight: 900;
 }
 
 p {
-  line-height: var(--scale-1);
+  line-height: var(--scale-up-1);
 }
 
 img {
   max-width: 100%;
 }
-
-header > a {
-  display: block;
-  margin-top: var(--scale-half);
-  margin-left: auto;
-  margin-right: auto;
-  width: 50vw;
-}
-
-/**
- * Good Points:
- * Composition over inheritance. Combine simple, independent parts.
- * Add utility classes as they come up. Don't make them all at first.
- * Not relying on media queries anymore.
- * Designing for the web is designing without seeing. Quantum layouts!
- * An element with assymetrical padding is trying to solve something else it shouldn’t.
- * Only set the CSS values needed to achieve the specific layout you are attempting.
- * Exception based thinking with cascading.
- * Layout components should try to solve just one problem.
- *
- * All the nifty CSS saved here.
- */

@@ -1,0 +1,11 @@
+header {
+  background-color: var(--green);
+}
+
+header > a {
+  display: block;
+  margin-top: var(--scale-down-2);
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vw;
+}
