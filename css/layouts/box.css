@@ -1,6 +1,5 @@
 .box {
-  --space: var(--scale-base);
-  padding: var(--space);
+  padding: var(--scale-base);
 
   /**
    * Always apply the transparent outline for possible high contrast
@@ -11,5 +10,5 @@
 }
 
 .box.tight {
-  --space: var(--scale-down-1);
+  padding: var(--scale-down-1);
 }

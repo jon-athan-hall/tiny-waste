@@ -11,12 +11,15 @@
 
   <body>
     {% include header.html %}
-    <main class="box">
-      <section class="large stack">
-        {% for latest in site.posts limit: 3 %}
-          {% include preview.html post=latest %}
-        {% endfor %}
-      </section>
+    <main class="box spacious ruled stack">
+      <header>
+        <h1>{{ page.title }}</h1>
+        <h3>Week {{ page.number }}</h3>
+      </header>
+      {% assign posts = site.posts | where: "week", page.number %}
+      {% for post in posts %}
+        {% include card.html post=post %}
+      {% endfor %}
     </main>
    </body>
 </html>

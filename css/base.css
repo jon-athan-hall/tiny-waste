@@ -2,10 +2,11 @@
   /**
    * A couple of scale ratios to work with for consistent sizing.
    */
-   --ratio: 1.5;
+   --ratio: 1.618033988749895;
    --scale-base: 1rem;
    --scale-up-1: calc(var(--scale-base) * var(--ratio));
    --scale-up-2: calc(var(--scale-up-1) * var(--ratio));
+   --scale-up-3: calc(var(--scale-up-2) * var(--ratio));
    --scale-down-1: calc(var(--scale-base) / var(--ratio));
    --scale-down-2: calc(var(--scale-down-1) / var(--ratio));
 
@@ -57,9 +58,20 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
 }
 
-h1, h2 {
+h1 {
   color: var(--green);
-  font-size: var(--scale-up-2);
+  font-size: var(--scale-up-3);
+}
+
+h2 {
+  color: var(--dark-green);
+  font-size: var(--scale-up-1);
+}
+
+h3 {
+  color: var(--lighter-green);
+  font-size: var(--scale-base);
+  text-transform: uppercase;
 }
 
 p {
@@ -68,6 +80,7 @@ p {
 
 img {
   max-width: 100%;
+  border: 3px solid var(--green);
 }
 
 date {
