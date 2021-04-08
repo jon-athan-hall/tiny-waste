@@ -5,18 +5,20 @@
     <title>{{ site.title }}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="description" content="{{ site.description }}">
+    <meta name="description" content="{{ page.description }}">
     <link rel="stylesheet" href="/css/style.css">
   </head>
 
   <body>
     {% include header.html %}
-    <main class="box">
-      <section class="large stack">
-        {% for latest in site.posts limit: 3 %}
-          {% include card.html post=latest %}
-        {% endfor %}
-      </section>
+    <main class="box spacious ruled stack">
+      <article>
+        <header>
+          <h1>{{ page.title }}</h1>
+          <h3>Week {{ page.number }}</h3>
+        </header>
+        {{ page.content }}
+      </article>
     </main>
    </body>
 </html>

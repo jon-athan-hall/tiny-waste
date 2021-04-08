@@ -18,7 +18,7 @@
   --green: #06724d;
   --light-green: #42957c;
   --lighter-green: #83b9a7;
-  --lightest-brand: #c1dcd3;
+  --lightest-green: #c1dcd3;
   --dark-green: #011a12;
 
   /**
@@ -78,9 +78,22 @@ p {
   line-height: var(--scale-up-1);
 }
 
+a,
+a:visited {
+  border-bottom: 2px solid var(--lighter-green);
+  color: var(--green);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 500ms ease;
+}
+
+a:hover,
+a:active {
+  color: var(--light-green);
+}
+
 img {
   max-width: 100%;
-  border: 3px solid var(--green);
 }
 
 date {
