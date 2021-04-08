@@ -9,4 +9,9 @@ header > a {
   margin-right: auto;
   width: 50vw;
   border-bottom: none;
+  text-align: center;
+}
+
+header > a > img {
+  max-width: 16em;
 }
