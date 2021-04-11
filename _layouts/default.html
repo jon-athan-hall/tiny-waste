@@ -13,7 +13,7 @@
     {% include header.html %}
     <main class="box">
       <section class="large stack">
-        {% for latest in site.posts limit: 3 %}
+        {% for latest in site.posts %}
           {% include card.html post=latest %}
         {% endfor %}
       </section>

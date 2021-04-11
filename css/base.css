@@ -58,6 +58,18 @@ main {
   margin-right: auto;
 }
 
+article > section {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-bottom: 2px solid var(--green);
+}
+
+article > section:last-child {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-sans-serif);
   font-size: var(--scale-up-1);
@@ -70,6 +82,7 @@ h1 {
 }
 
 h2 {
+  margin-bottom: .25em;
   color: var(--dark-green);
   font-size: var(--scale-up-1);
 }
@@ -80,8 +93,34 @@ h3 {
   text-transform: uppercase;
 }
 
-p {
+p, ol, ul {
+  margin-bottom: 1em;
   line-height: var(--scale-up-1);
+}
+
+ol, ul {
+  margin-left: .5em;
+}
+
+li {
+  margin-bottom: .5em;
+}
+
+li:before {
+  content: "\2043";
+  display: inline-block;
+  margin-right: .5em;
+  color: var(--green);
+  font-weight: bold;
+}
+
+ol {
+  counter-reset: li;
+}
+
+ol li:before {
+  content: counter(li) ".";
+  counter-increment: li;
 }
 
 a,
@@ -98,7 +137,8 @@ a:active {
   color: var(--light-green);
 }
 
-img {
+img,
+iframe {
   max-width: 100%;
 }
 
