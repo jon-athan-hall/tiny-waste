@@ -1,0 +1,22 @@
+.instructions ol {
+  margin-left: 0;
+}
+
+.instructions ol li {
+  margin-bottom: var(--scale-up-2);
+}
+
+.instructions ol li:before {
+  content: counter(li);
+  width: 100%;
+  padding: var(--scale-down-2);
+  background-color: var(--light-green);
+  color: var(--white);
+  text-align: center;
+  border-top-left-radius: var(--scale-down-1);
+  border-top-right-radius: var(--scale-down-1);
+}
+
+.instructions p {
+  padding: 0 var(--scale-down-2);
+}

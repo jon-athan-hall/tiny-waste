@@ -7,6 +7,7 @@
  */
  @import "/css/layouts/box.css";
  @import "/css/layouts/stack.css";
+ @import "/css/layouts/instructions.css";
 
 /**
  * Specific styles for includes.

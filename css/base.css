@@ -80,11 +80,14 @@ h1 {
 }
 
 h2 {
+  color: var(--dark-green);
+  font-size: var(--scale-up-1);
+}
+
+.layout--post h2 {
   margin-bottom: .5em;
   padding-bottom: .5em;
   border-bottom: 2px solid var(--green);
-  color: var(--dark-green);
-  font-size: var(--scale-up-1);
 }
 
 h3 {
@@ -94,12 +97,16 @@ h3 {
   text-transform: uppercase;
 }
 
-p, ol, ul {
+.layout--post h3 {
+  margin-bottom: .75em;
+}
+
+p, ul, ol {
   margin-bottom: 1em;
   line-height: var(--scale-up-1);
 }
 
-ol, ul {
+ul, ol {
   margin-left: .5em;
 }
 
@@ -110,7 +117,7 @@ li {
 li:before {
   content: "\2043";
   display: inline-block;
-  margin-right: .5em;
+  margin-right: .25em;
   color: var(--green);
   font-weight: bold;
 }
@@ -153,4 +160,10 @@ figcaption {
 date {
   color: var(--lighter-green);
   font-size: var(--scale-down-1);
+}
+
+.letter {
+  padding: var(--scale-base);
+  background-color: var(--lightest-green);
+  color: var(--green);
 }
