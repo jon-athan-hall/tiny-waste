@@ -30,7 +30,7 @@
   --font-heading: 'Raleway', serif;
   --measure: 64ch;
 
-  color: var(--black);
+  color: var(--dark-green);
   font-family: var(--font-body-text);
   font-size: var(--font-size-base);
   font-weight: 300;
@@ -94,7 +94,7 @@ h2 {
 h3 {
   color: var(--lighter-green);
   font-size: var(--scale-base);
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
