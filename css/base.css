@@ -26,13 +26,14 @@
    * base font, while keeping the default value as the minimum.
    */
   --font-size-base: calc(1rem + 0.5vw);
-  --font-serif: serif;
-  --font-sans-serif: sans-serif;
+  --font-body-text: 'Mukta', sans-serif;
+  --font-heading: 'Raleway', serif;
   --measure: 64ch;
 
   color: var(--black);
-  font-family: var(--font-serif);
+  font-family: var(--font-body-text);
   font-size: var(--font-size-base);
+  font-weight: 300;
 }
 
 html {
@@ -69,9 +70,9 @@ article > section:last-child {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-sans-serif);
+  font-family: var(--font-heading);
   font-size: var(--scale-up-1);
-  font-weight: 900;
+  font-weight: 800;
 }
 
 h1 {
@@ -91,9 +92,9 @@ h2 {
 }
 
 h3 {
-  margin-bottom: .25em;
   color: var(--lighter-green);
   font-size: var(--scale-base);
+  font-weight: 500;
   text-transform: uppercase;
 }
 

@@ -9,12 +9,14 @@
 .instructions ol li:before {
   content: counter(li);
   width: 100%;
-  padding: var(--scale-down-2);
+  padding: var(--scale-down-1);
   background-color: var(--light-green);
-  color: var(--white);
-  text-align: center;
   border-top-left-radius: var(--scale-down-1);
   border-top-right-radius: var(--scale-down-1);
+  border-bottom: 2px solid var(--dark-green);
+  color: var(--white);
+  font-size: var(--scale-up-1);
+  text-align: center;
 }
 
 .instructions p {
