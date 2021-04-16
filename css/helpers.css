@@ -17,3 +17,20 @@
 .text-align\:center {
   text-align: center;
 }
+
+
+ul.plain, ol.plain {
+  margin-left: 0;
+}
+
+ul.plain li:before, ol.plain li:before {
+  content: "";
+}
+
+ul.plain a {
+  float: left;
+  width: 20%;
+  margin-top: var(--scale-down-2);
+  margin-right: var(--scale-base);
+  border-bottom: none;
+}

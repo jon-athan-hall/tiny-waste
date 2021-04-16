@@ -1,0 +1,5 @@
+.letter {
+  padding: var(--scale-base);
+  background-color: var(--lightest-green);
+  color: var(--green);
+}

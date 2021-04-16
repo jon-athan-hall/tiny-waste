@@ -26,14 +26,14 @@
    * base font, while keeping the default value as the minimum.
    */
   --font-size-base: calc(1rem + 0.5vw);
-  --font-body-text: 'Mukta', sans-serif;
+  --font-body-text: 'Source Sans Pro', sans-serif;
   --font-heading: 'Raleway', serif;
   --measure: 64ch;
 
   color: var(--dark-green);
   font-family: var(--font-body-text);
   font-size: var(--font-size-base);
-  font-weight: 300;
+  font-weight: 400;
 }
 
 html {
@@ -85,21 +85,12 @@ h2 {
   font-size: var(--scale-up-1);
 }
 
-.layout--post h2 {
-  margin-bottom: .5em;
-  padding-bottom: .5em;
-  border-bottom: 2px solid var(--green);
-}
-
 h3 {
   color: var(--lighter-green);
+  font-family: var(--font-body-text);
   font-size: var(--scale-base);
   font-weight: 600;
   text-transform: uppercase;
-}
-
-.layout--post h3 {
-  margin-bottom: .75em;
 }
 
 p, ul, ol {
@@ -136,7 +127,7 @@ a,
 a:visited {
   border-bottom: 2px solid var(--lighter-green);
   color: var(--green);
-  font-weight: bold;
+  font-weight: 700;
   line-height: var(--scale-up-1);
   text-decoration: none;
   transition: color 500ms ease;
@@ -153,18 +144,12 @@ iframe {
 }
 
 figcaption {
-  padding: .25em;
-  font-size: .75rem;
+  padding: 1em;
+  font-size: var(--scale-down-1);
   text-align: center;
 }
 
 date {
   color: var(--lighter-green);
   font-size: var(--scale-down-1);
-}
-
-.letter {
-  padding: var(--scale-base);
-  background-color: var(--lightest-green);
-  color: var(--green);
 }
