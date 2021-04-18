@@ -18,6 +18,13 @@
   text-align: center;
 }
 
+.border\:none {
+  border: none;
+}
+
+.margin\:0 {
+  margin: 0;
+}
 
 ul.plain, ol.plain {
   margin-left: 0;
