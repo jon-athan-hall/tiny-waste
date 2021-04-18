@@ -23,7 +23,7 @@ ul.plain, ol.plain {
   margin-left: 0;
 }
 
-ul.plain li:before, ol.plain li:before {
+ul.plain li:before {
   content: "";
 }
 
