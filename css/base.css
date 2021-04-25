@@ -94,7 +94,8 @@ h3 {
 }
 
 p, ul, ol {
-  margin-bottom: 1em;
+  margin-top: var(--scale-down-1);
+  margin-bottom: var(--scale-down-1);
   line-height: var(--scale-up-1);
 }
 
