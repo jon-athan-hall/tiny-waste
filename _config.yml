@@ -37,6 +37,7 @@ plugins:
 collections:
   weeks:
     output: true
+    sort_by: number
 
 # Exclude from processing.
 # The following items will not be processed, by default.
