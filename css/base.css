@@ -1,26 +1,157 @@
-.link, .link:visited {
-  border-bottom: 1px solid var(--main);
-  color: var(--main);
-  text-decoration: none;
+:root {
+  /**
+   * A couple of scale ratios to work with for consistent sizing.
+   */
+   --ratio: 1.618033988749895;
+   --scale-base: 1rem;
+   --scale-up-1: calc(var(--scale-base) * var(--ratio));
+   --scale-up-2: calc(var(--scale-up-1) * var(--ratio));
+   --scale-up-3: calc(var(--scale-up-2) * var(--ratio));
+   --scale-down-1: calc(var(--scale-base) / var(--ratio));
+   --scale-down-2: calc(var(--scale-down-1) / var(--ratio));
+
+  /**
+   * Color scheme variables all together.
+   */
+  --black: #2d2d2d;
+  --white: #fff;
+  --green: #06724d;
+  --light-green: #42957c;
+  --lighter-green: #83b9a7;
+  --lightest-green: #c1dcd3;
+  --dark-green: #011a12;
+
+  /**
+   * Algorithm that uses viewpoint units to proportionately scale the
+   * base font, while keeping the default value as the minimum.
+   */
+  --font-size-base: calc(1rem + 0.5vw);
+  --font-body-text: 'Source Sans Pro', sans-serif;
+  --font-heading: 'Raleway', serif;
+  --measure: 64ch;
+
+  color: var(--dark-green);
+  font-family: var(--font-body-text);
+  font-size: var(--font-size-base);
+  font-weight: 400;
 }
 
-.link:hover {
-  color: var(--gray);
+html {
+  box-sizing: border-box;
+  height: 100vh;
 }
 
-.button {
-  padding: .5em 2em;
-  background-image: linear-gradient(to bottom, var(--light-accent), var(--accent));
-  border-radius: .25em;
-  border: none;
-  color: var(--white);
-  font-family: 'Amatic SC';
-  font-size: 1.5rem;  
-  font-weight: 700;
-  text-decoration: none;
+*, *::before, *::after {
+  max-width: var(--measure);
+  box-sizing: inherit;
+}
+
+/**
+ * Exception based styling for those elements without a measure width cap.
+ */
+html, body, div, header, nav, main, footer {
+  max-width: none;
+}
+
+main {
+  max-width: var(--measure);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article > section {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+
+article > section:last-child {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-size: var(--scale-up-1);
+  font-weight: 800;
+}
+
+h1 {
+  color: var(--green);
+  font-size: var(--scale-up-2);
+}
+
+h2 {
+  color: var(--dark-green);
+  font-size: var(--scale-up-1);
+}
+
+h3 {
+  color: var(--lighter-green);
+  font-family: var(--font-body-text);
+  font-size: var(--scale-base);
+  font-weight: 600;
   text-transform: uppercase;
 }
 
-.button:active {
-  background-image: linear-gradient(to top, var(--light-accent), var(--accent));
+p, ul, ol {
+  margin-top: var(--scale-down-1);
+  margin-bottom: var(--scale-down-1);
+  line-height: var(--scale-up-1);
+}
+
+ul, ol {
+  margin-left: .5em;
+}
+
+li {
+  margin-bottom: .75em;
+}
+
+li:before {
+  content: "\2043";
+  display: inline-block;
+  margin-right: .25em;
+  color: var(--green);
+  font-weight: bold;
+}
+
+ol {
+  counter-reset: li;
+}
+
+ol li:before {
+  content: counter(li) ".";
+  counter-increment: li;
+}
+
+a,
+a:visited {
+  border-bottom: 2px solid var(--lighter-green);
+  color: var(--green);
+  font-weight: 700;
+  line-height: var(--scale-up-1);
+  text-decoration: none;
+  transition: color 500ms ease;
+}
+
+a:hover,
+a:active {
+  color: var(--light-green);
+}
+
+img,
+iframe {
+  max-width: 100%;
+  width: 100%;
+}
+
+figcaption {
+  padding: 1em;
+  font-size: var(--scale-down-1);
+  text-align: center;
+}
+
+date {
+  color: var(--lighter-green);
+  font-size: var(--scale-down-1);
 }

@@ -1,0 +1,14 @@
+.box {
+  padding: var(--scale-base);
+
+  /**
+   * Always apply the transparent outline for possible high contrast
+   * modes enabled by users.
+   */
+  outline: 0.125rem solid transparent;
+  outline-offset: calc(0.125rem * -1);
+}
+
+.box.tight {
+  padding: var(--scale-down-1);
+}

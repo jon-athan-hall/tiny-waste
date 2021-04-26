@@ -2,49 +2,24 @@
 <html>
   <head>
     {% include google-analytics.html %}
-    <title>{{ page.title }}</title>
+    <title>{{ site.title }}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="description" content="{{ page.description }}">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/main.css">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
+
   <body>
     {% include header.html %}
-
-    <main>
-      <article>
-        <header>
-          <h1>{{ page.title }}</h1>
-          <h2>Week {{ page.number }}</h2>
-        </header>
-        
-        <section>
-          <p>{{ content }}</p>
-        </section>
-
-        {% assign week_posts = site.posts | where: "week", page.number %}
-        {% assign lead_post = week_posts.last %}
-        <section class="what-is what-is--week">
-          <img class="what-is__image" src="/assets/posts/{{ lead_post.image }}">
-          <div class="what-is__container">
-            <p class="what-is__text">{{ lead_post.excerpt | strip_html }}</p>
-            <a class="button what-is__button" href="{{ lead_post.url }}">Read More</a>
-          </div>
-        </section>
-        
-        <div class="post-previews">
-          {% for post in week_posts reversed limit: 3 %}
-          <section class="post-preview post-preview--week">
-            <a class="post-preview__link-wrapper" href="{{ post.url }}">
-              <img class="post-preview__image" src="/assets/posts/{{ post.image }}">
-              <h3 class="post-preview__title">{{ post.title }}</h3>
-            </a>
-          </section>
-          {% endfor %}
-        </div>
-      </article>
+    <main class="box spacious ruled stack">
+      <header>
+        <h1>{{ page.title }}</h1>
+        <h3>Week {{ page.number }}</h3>
+      </header>
+      {% assign posts = site.posts | where: "week", page.number %}
+      {% for post in posts reversed %}
+        {% include card.html post=post %}
+      {% endfor %}
     </main>
-  </body>
+   </body>
 </html>

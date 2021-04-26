@@ -1,0 +1,7 @@
+.letter,
+blockquote {
+  padding: var(--scale-base);
+  background-color: var(--lightest-green);
+  color: var(--green);
+  line-height: var(--scale-up-1);
+}

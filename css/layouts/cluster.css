@@ -1,0 +1,31 @@
+.cluster {
+  --space: var(--scale-1);
+
+  /**
+   * Avoid scrolling because of the negative margins.
+   */
+  overflow: hidden;
+}
+
+.cluster > * {
+  display: flex;
+  flex-wrap: wrap;
+
+  /**
+   * Experiment with justify-content and align-items for different wraps effects.
+   */
+  justify-content: flex-start;
+
+  /**
+   * This brings the children flush to the parent container.
+   */
+  margin: calc(var(--space) / 2 * -1);
+}
+
+.cluster > * > * {
+  /**
+   * The upcoming gap property may replace this one day. For now, halve
+   * the desired space since siblings each get the margins.
+   */
+  margin: calc(var(--space) / 2);
+}

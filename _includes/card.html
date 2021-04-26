@@ -1,0 +1,9 @@
+<section class="stack">
+  {% include image-source-set.html image=include.post.image alt=include.post.alt %}
+  <h2>{{ include.post.title }}</h2>
+  <h3>{{ include.post.category }}</h3>
+  <p>
+    {{ include.post.excerpt | strip_html }}
+    <a href="{{ include.post.url }}">Read more &rarr;</a>
+  </p>
+</section>
