@@ -155,3 +155,7 @@ date {
   color: var(--lighter-green);
   font-size: var(--scale-down-1);
 }
+
+em {
+  color: var(--light-green);
+}
