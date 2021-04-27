@@ -1,0 +1,43 @@
+/**
+ * One thing we highly recommend is not including utility classes until
+ * you need them. You don’t want to send users any unused or redundant data.
+ */
+.font-size\:base {
+  font-size: var(--font-size-base) !important;
+}
+
+.max-width\:measure {
+  max-width: var(--measure) !important;
+}
+
+.max-width\:measure\/2 {
+  max-width: calc(var(--measure) / 2);
+}
+
+.text-align\:center {
+  text-align: center;
+}
+
+.border\:none {
+  border: none;
+}
+
+.margin\:0 {
+  margin: 0;
+}
+
+ul.plain, ol.plain {
+  margin-left: 0;
+}
+
+ul.plain li:before {
+  content: "";
+}
+
+ul.plain a {
+  float: left;
+  width: 20%;
+  margin-top: var(--scale-down-2);
+  margin-right: var(--scale-base);
+  border-bottom: none;
+}

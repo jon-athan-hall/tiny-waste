@@ -1,0 +1,23 @@
+.center {
+  box-sizing: content-box;
+  max-width: var(--measure);
+
+  /**
+   * Avoid margin shorthand so as not to overwrite some other styles.
+   */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--scale-1);
+  padding-right: var(--scale-1);
+}
+
+.center.intrinsic {
+  /**
+   * Other option is to use flexbox to center based on their natural widths.
+   */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+}

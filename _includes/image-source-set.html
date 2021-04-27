@@ -1,0 +1,9 @@
+<img
+  alt="{{ include.alt }}"
+  src="/assets/img/{{ include.image }}"
+  srcset="
+    /assets/img/{{ include.image | replace ".jpg", "-s.jpg" }} 400w,
+    /assets/img/{{ include.image | replace ".jpg", "-m.jpg" }} 800w,
+    /assets/img/{{ include.image | replace ".jpg", "-l.jpg" }} 1600w,
+    /assets/img/{{ include.image }} 2400w"
+/>

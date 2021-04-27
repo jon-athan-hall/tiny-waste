@@ -1,0 +1,10 @@
+.post h2 {
+  margin-bottom: .5em;
+  padding-bottom: .5em;
+  border-bottom: 2px solid var(--green);
+}
+
+.post section h3 {
+  margin-top: var(--scale-up-1);
+  margin-bottom: var(--scale-base);
+}
