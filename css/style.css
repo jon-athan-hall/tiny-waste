@@ -4,11 +4,19 @@
 @import "/css/helpers.css";
 
 /**
- * Reusable styles for layouts.
+ * Reusable styles researched and honed from every-layout.dev
  */
 @import "/css/layouts/box.css";
+@import "/css/layouts/frame.css";
+@import "/css/layouts/grid.css";
+@import "/css/layouts/imposter.css";
 @import "/css/layouts/stack.css";
-@import "/css/layouts/header.css";
-@import "/css/layouts/post.css";
-@import "/css/layouts/instructions.css";
-@import "/css/layouts/letter.css";
+
+/**
+ * Homebrewed elements around the site trying their best to be like the above layouts.
+ */
+@import "/css/elements/card.css";
+@import "/css/elements/header.css";
+@import "/css/elements/instructions.css";
+@import "/css/elements/letter.css";
+@import "/css/elements/post.css";

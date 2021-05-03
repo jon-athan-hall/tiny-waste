@@ -1,10 +1,18 @@
 ---
-layout: default
+layout: full
 ---
-<section>
-  <ul>
+<header class="box text-align:center">
+  <h1>One Week at a Time</h1>
+</header>
+
+<section class="max-width:none spacious grid">
   {% for week in site.weeks %}
-    <li><a href="{{ week.url }}">Week {{ week.number }} - {{ week.title }}</a></li>
+    {% assign first_post = site.posts | where: "week", week.number | last %}
+    <a class="stack week card border:none" href="{{ week.url }}">
+      <div class="frame position:relative">
+        {% include image-source-set.html image=first_post.image alt=first_post.alt %}
+        <h2 class="transparent bottom imposter">Week {{ week.number }} {{ week.title }}</h2>
+      </div>
+    </a>
   {% endfor %}
-  </ul>
 </section>
