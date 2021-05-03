@@ -2,10 +2,14 @@
   /**
    * Set the minimum column width.
    */
-  --minimum: calc(var(--measure) / 4);
+  --minimum: calc(var(--measure) / 2);
 
   display: grid;
-  grid-gap: var(--scale-1);
+  grid-gap: var(--scale-base);
+}
+
+.grid.spacious {
+  grid-gap: var(--scale-up-1);
 }
 
 /**
