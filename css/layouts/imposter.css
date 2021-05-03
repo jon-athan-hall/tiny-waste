@@ -1,5 +1,5 @@
 .imposter {
-  --space: var(--scale-1);
+  --space: var(--scale-base);
 
   /**
    * This position property has absolute by default. Use
@@ -12,6 +12,23 @@
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: auto;
-  max-width: calc(100% - (var(--space) * 2);
-  max-height: calc(100% - (var(--space) * 2);
+  max-width: calc(100% - (var(--space) * 2));
+  max-height: calc(100% - (var(--space) * 2));
+}
+
+.imposter.bottom {
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: none;
+  max-width: 100%;
+}
+
+.imposter.transparent {
+  padding: var(--scale-down-2);
+  background-color: rgba(255, 255, 255, 0.75);
+  color: var(--green);
+  font-size: var(--scale-base);
+  text-align: center;
 }

@@ -12,15 +12,8 @@
 
   <body>
     {% include header.html %}
-    <main class="box spacious ruled stack">
-      <header>
-        <h1>{{ page.title }}</h1>
-        <h3>Week {{ page.number }}</h3>
-      </header>
-      {% assign posts = site.posts | where: "week", page.number %}
-      {% for post in posts reversed %}
-        {% include card.html post=post %}
-      {% endfor %}
+    <main class="max-width:none box stack">
+      {{ content }}
     </main>
    </body>
 </html>
