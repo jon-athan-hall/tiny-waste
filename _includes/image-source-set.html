@@ -1,9 +1,27 @@
+{% comment %}Gather together the alternative sizes for the image.{% endcomment %}
+{% assign s_image_path = "/assets/img/" | append: include.image | replace: ".jpg", "-s.jpg" %}
+{% assign s_image_file = site.static_files | where: "path", s_image_path | first %}
+
+{% assign m_image_path = "/assets/img/" | append: include.image | replace: ".jpg", "-m.jpg" %}
+{% assign m_image_file = site.static_files | where: "path", m_image_path | first %}
+
+{% assign l_image_path = "/assets/img/" | append: include.image | replace: ".jpg", "-l.jpg" %}
+{% assign l_image_file = site.static_files | where: "path", l_image_path | first %}
+
+{% comment %}Check for each file existence before adding to srcset.{% endcomment %}
 <img
   alt="{{ include.alt }}"
   src="/assets/img/{{ include.image }}"
   srcset="
-    /assets/img/{{ include.image | replace: ".jpg", "-s.jpg" }} 400w,
-    /assets/img/{{ include.image | replace: ".jpg", "-m.jpg" }} 800w,
-    /assets/img/{{ include.image | replace: ".jpg", "-l.jpg" }} 1600w,
+    {% if s_image_file %}
+      /assets/img/{{ include.image | replace: ".jpg", "-s.jpg" }} 400w,
+    {% endif %}
+    {% if m_image_file %}
+      /assets/img/{{ include.image | replace: ".jpg", "-m.jpg" }} 800w,
+    {% endif %}
+    {% if l_image_file %}
+      /assets/img/{{ include.image | replace: ".jpg", "-l.jpg" }} 1600w,
+    {% endif %}
     /assets/img/{{ include.image }} 2400w"
+  onerror="this.onerror=null;this.src='/assets/img/{{ include.image }}';"
 />
