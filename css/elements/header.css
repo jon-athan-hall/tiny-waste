@@ -8,11 +8,17 @@ header > nav {
   flex-wrap: wrap;
 }
 
-header > nav > a {
+header > nav > a,
+header > nav > a:visited {
   flex: 1 0 auto;
   border-bottom: none;
   color: var(--white);
   text-align: center;
+}
+
+header > nav > a:hover,
+header > nav > a:active {
+  color: var(--lightest-green);
 }
 
 header > nav > .logo {
