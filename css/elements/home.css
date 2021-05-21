@@ -1,0 +1,16 @@
+.home {
+  max-width: calc(var(--measure) * 1.25);
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  gap: var(--scale-up-1);
+  grid-template-columns: 3fr 1fr;
+}
+
+.home > * {
+  grid-column: 1 / 2;
+}
+
+.home > aside {
+  grid-column: 2 / 3;
+}

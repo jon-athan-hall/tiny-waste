@@ -1,0 +1,7 @@
+<section class="preview stack{% if include.class %} {{ include.class }}{% endif %}">
+  <a class="frame border:none" href={{ include.post.url }}>
+    {% include image-source-set.html image=include.post.image alt=include.post.alt %}
+  </a>
+  <h3>{{ include.post.category }}</h3>
+  <a class="border:none" href={{ include.post.url }}><h2>{{ include.post.title }}</h2></a>
+</section>

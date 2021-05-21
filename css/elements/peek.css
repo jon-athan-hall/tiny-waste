@@ -1,0 +1,25 @@
+.peek {
+  padding-bottom: var(--scale-base);
+  border-bottom: 2px solid var(--green);
+}
+
+.peek:last-child {
+  border-bottom: none;
+}
+
+.peek > *:first-child {
+  float: left;
+  width: 25%;
+  margin-right: var(--scale-base);
+}
+
+.peek h2 {
+  margin-top: var(--scale-down-1);
+  font-size: var(--scale-base);
+  line-height: 1em;
+}
+
+.peek h3 {
+  margin-top: var(--scale-down-1);
+  font-size: var(--scale-down-1);
+}

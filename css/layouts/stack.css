@@ -17,6 +17,14 @@
   --space-between: var(--scale-down-1);
 }
 
+.stack.tighter > * + * {
+  --space-between: var(--scale-down-2);
+}
+
+.stack.tightest > * + * {
+  --space-between: var(--scale-down-3);
+}
+
 .stack.spacious > * + * {
   margin-top: var(--scale-up-2);
 }

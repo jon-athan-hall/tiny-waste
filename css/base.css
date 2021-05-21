@@ -9,6 +9,7 @@
    --scale-up-3: calc(var(--scale-up-2) * var(--ratio));
    --scale-down-1: calc(var(--scale-base) / var(--ratio));
    --scale-down-2: calc(var(--scale-down-1) / var(--ratio));
+   --scale-down-3: calc(var(--scale-down-2) / var(--ratio));
 
   /**
    * Color scheme variables all together.
@@ -53,8 +54,8 @@ html, body, div, header, nav, main, footer {
   max-width: none;
 }
 
-main, nav {
-  max-width: var(--measure);
+nav {
+  max-width: calc((var(--measure) * 1.25) - (var(--scale-base) * 4));
   margin-left: auto;
   margin-right: auto;
 }
