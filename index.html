@@ -6,12 +6,12 @@ layout: default
   {% include card.html post=top_post %}
 {% endfor %}
 
-<aside class="stack">
+<aside class="responsive stack">
   {% include preview.html post=site.posts.last class="tighter tiny" %}
   {% for next_post in site.posts offset: 1 limit: 3 %}
     {% include preview.html post=next_post class="tighter tiny" %}
   {% endfor %}
-  <p>Google Ads here</p>
+  {% include google-adsense.html %}
 </aside>
 
 <section class="stack">

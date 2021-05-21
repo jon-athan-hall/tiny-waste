@@ -10,10 +10,10 @@ header > nav {
 
 header > nav > a,
 header > nav > a:visited {
-  flex: 1 0 auto;
+  padding-top: 6px;
+  padding-left: var(--scale-up-1);
   border-bottom: none;
   color: var(--white);
-  text-align: center;
 }
 
 header > nav > a:hover,
@@ -22,30 +22,12 @@ header > nav > a:active {
 }
 
 header > nav > .logo {
-  display: block;
-  margin: var(--scale-down-1) auto;
-  width: 100%;
-  border-bottom: none;
-}
-
-.logo > img {
-  max-width: 8em;
-}
-
-@media (min-width: 36em) {
-  header > nav {
-    justify-content: flex-end;
-  }
-
-  header > nav > a {
-    text-align: right;
-  }
-
-  header > nav > .logo {
-    align-self: flex-start;
-    flex-grow: 4;
-    margin-bottom: 0;
-    width: auto;
-    text-align: left;
-  }
+  flex: 1 0 auto;
+  padding-top: 0;
+  padding-left: 0;
+  font-family: var(--font-body-text);
+  font-size: var(--scale-up-1);
+  font-weight: 900;
+  text-shadow: 2px 2px 0 var(--light-green);
+  text-transform: lowercase;
 }

@@ -13,8 +13,8 @@
 
   <body class="post">
     {% include header.html %}
-    <main>
-      <article class="box">
+    <main class="box columns">
+      <article>
         <header class="stack">
           {% include image-source-set.html image=page.image alt=page.alt %}
           <h1>{{ page.title }}</h1>
@@ -27,6 +27,17 @@
           <a href="{{ page.next.url }}">{{ page.next.title }} &rarr;</a>
         {% endif %}
       </article>
+
+      <aside class="responsive stack">
+        {% assign related_posts = site.posts | where: "week", page.week %}
+        {% for related_post in related_posts %}
+          {% unless related_post.title == page.title %}
+            {% include preview.html post=related_post class="tighter tiny" %}
+          {% endunless %}
+        {% endfor %}
+        {% include preview.html post=site.posts.last class="tighter tiny" %}
+        {% include google-adsense.html %}
+      </aside>
     </main>
    </body>
 </html>

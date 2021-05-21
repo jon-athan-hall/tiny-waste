@@ -1,5 +1,5 @@
 .peek {
-  padding-bottom: var(--scale-base);
+  padding-bottom: var(--scale-down-1);
   border-bottom: 2px solid var(--green);
 }
 

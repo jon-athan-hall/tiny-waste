@@ -32,3 +32,9 @@
 .stack > .ignore {
   margin-top: 0;
 }
+
+@media (max-width: 36rem) {
+  .stack.responsive > * + * {
+    --space-between: var(--scale-up-2);
+  }
+}

@@ -1,8 +1,10 @@
-.preview.tiny h2 {
-  font-size: var(--scale-down-1);
-  line-height: 1em;
-}
-
-.preview.tiny h3 {
-  font-size: var(--scale-down-1);
+@media (min-width: 36rem) {
+  .preview.tiny h2 {
+    font-size: var(--scale-down-1);
+    line-height: 1em;
+  }
+  
+  .preview.tiny h3 {
+    font-size: var(--scale-down-1);
+  }
 }
