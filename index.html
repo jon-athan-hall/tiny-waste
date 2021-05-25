@@ -2,8 +2,34 @@
 layout: default
 ---
 
-<section class="large spacious stack">
-  {% for latest in site.posts %}
-    {% include card.html post=latest %}
+{% for top_post in site.posts limit: 1 %}
+  {% include card.html post=top_post %}
+{% endfor %}
+
+<aside class="responsive stack">
+  {% include preview.html post=site.posts.last class="tighter tiny" %}
+  {% for next_post in site.posts offset: 1 limit: 3 %}
+    {% include preview.html post=next_post class="tighter tiny" %}
+  {% endfor %}
+  {% include google-adsense.html %}
+</aside>
+
+<section class="stack">
+  {% for older_post in site.posts offset: 4 limit: 25 %}
+    <div class="peek">
+      <a class="border:none" href={{ older_post.url }}>
+        {% include image-source-set.html image=older_post.image alt=older_post.alt %}
+      </a>
+      <section class="tighter stack">
+        <a class="border:none" href={{ older_post.url }}>
+          <h2>{{ older_post.title }}</h2>
+        </a>
+        {% assign older_week = site.weeks | where: "number", older_post.week | first %}
+        <a class="border:none" href={{ older_week.url }}>
+          <h3>Week {{ older_week.number }} {{ older_week.title }}</h3>
+        </a>
+        <h4>{{ older_post.date | date: "%d %B %Y" }}</h4>
+      </section>
+    </div>
   {% endfor %}
 </section>

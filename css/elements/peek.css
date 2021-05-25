@@ -1,0 +1,28 @@
+.peek {
+  display: flex;
+  border-bottom: 2px solid var(--green);
+  padding-bottom: var(--scale-down-1);
+}
+
+.peek:last-child {
+  border-bottom: none;
+}
+
+.peek > * {
+  flex: 2 0 65%;
+}
+
+.peek > *:first-child {
+  flex: 0 0 35%;
+  margin-right: var(--scale-down-1);
+}
+
+.peek h2 {
+  font-size: var(--scale-base);
+  line-height: 1em;
+}
+
+.peek h3 {
+  font-size: var(--scale-down-1);
+  line-height: 1em;
+}

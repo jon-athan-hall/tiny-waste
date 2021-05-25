@@ -17,10 +17,24 @@
   --space-between: var(--scale-down-1);
 }
 
+.stack.tighter > * + * {
+  --space-between: var(--scale-down-2);
+}
+
+.stack.tightest > * + * {
+  --space-between: var(--scale-down-3);
+}
+
 .stack.spacious > * + * {
   margin-top: var(--scale-up-2);
 }
 
 .stack > .ignore {
   margin-top: 0;
+}
+
+@media (max-width: 36rem) {
+  .stack.responsive > * + * {
+    --space-between: var(--scale-up-2);
+  }
 }
