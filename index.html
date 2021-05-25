@@ -17,9 +17,10 @@ layout: default
 <section class="stack">
   {% for older_post in site.posts offset: 4 limit: 25 %}
     <div class="peek">
-        <a class="border:none" href={{ older_post.url }}>
-          {% include image-source-set.html image=older_post.image alt=older_post.alt %}
-        </a>
+      <a class="border:none" href={{ older_post.url }}>
+        {% include image-source-set.html image=older_post.image alt=older_post.alt %}
+      </a>
+      <section class="tighter stack">
         <a class="border:none" href={{ older_post.url }}>
           <h2>{{ older_post.title }}</h2>
         </a>
@@ -27,6 +28,8 @@ layout: default
         <a class="border:none" href={{ older_week.url }}>
           <h3>Week {{ older_week.number }} {{ older_week.title }}</h3>
         </a>
+        <h4>{{ older_post.date | date: "%d %B %Y" }}</h4>
+      </section>
     </div>
   {% endfor %}
 </section>

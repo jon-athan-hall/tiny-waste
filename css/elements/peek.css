@@ -1,25 +1,28 @@
 .peek {
-  padding-bottom: var(--scale-down-1);
+  display: flex;
   border-bottom: 2px solid var(--green);
+  padding-bottom: var(--scale-down-1);
 }
 
 .peek:last-child {
   border-bottom: none;
 }
 
+.peek > * {
+  flex: 2 0 65%;
+}
+
 .peek > *:first-child {
-  float: left;
-  width: 25%;
-  margin-right: var(--scale-base);
+  flex: 0 0 35%;
+  margin-right: var(--scale-down-1);
 }
 
 .peek h2 {
-  margin-top: var(--scale-down-1);
   font-size: var(--scale-base);
   line-height: 1em;
 }
 
 .peek h3 {
-  margin-top: var(--scale-down-1);
   font-size: var(--scale-down-1);
+  line-height: 1em;
 }

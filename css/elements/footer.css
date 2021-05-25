@@ -1,0 +1,39 @@
+body > footer {
+  background-color: var(--green);
+  color: var(--lightest-green);
+}
+
+body > footer > .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: calc((var(--measure) * 1.25) - var(--scale-base) * 2);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body > footer nav {
+  display: flex;
+  flex-direction: column;
+  max-width: initial;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: var(--scale-base);
+}
+
+body > footer a,
+body > footer a:visited {
+  border-bottom: none;
+  color: var(--white);
+}
+
+#mc_embed_signup_scroll {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#mc_embed_signup_scroll input {
+  padding: var(--scale-down-2);
+}
