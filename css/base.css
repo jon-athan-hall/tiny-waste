@@ -165,5 +165,7 @@ date {
 }
 
 em {
+  margin-right: 2px;
   color: var(--light-green);
+  font-style: italic;
 }
