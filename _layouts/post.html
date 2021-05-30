@@ -9,15 +9,24 @@
     <link rel="stylesheet" href="/css/style.css">
 
     <meta name="description" content="{{ page.description }}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url | replace: "index.html", "" }}">
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:url" content="{{ site.url }}{{ page.url | replace: "index.html", "" }}">
     <meta property="og:title" content="{{ page.title }} | {{ site.title }}">
     <meta property="og:description" content="{{ page.description }}">
     <meta property="og:image" content="{{ site.url }}/assets/img/{{ page.image }}">
     <meta property="og:image:alt" content="{{ page.alt }}">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
+
+    <!-- Twitter meta tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:url" content="{{ site.url }}{{ page.url | replace: "index.html", "" }}">
-    <link rel="canonical" href="{{ site.url }}{{ page.url | replace: "index.html", "" }}">
+    <meta property="twitter:domain" content="{{ site.url }}">
+    <meta property="twitter:url" content="{{ site.url }}{{ page.url | replace: "index.html", "" }}">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.description }}">
+    <meta name="twitter:image" content="{{ site.url }}/assets/img/{{ page.image }}">
   
     <link rel="icon" href="/favicon.ico">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
