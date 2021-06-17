@@ -169,3 +169,8 @@ em {
   color: var(--light-green);
   font-style: italic;
 }
+
+strong {
+  color: var(--black);
+  font-weight: 700;
+}
