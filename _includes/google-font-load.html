@@ -1,0 +1,17 @@
+<!-- Optimal way to load fonts. Preconnect to the font file origin. -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+<!-- Preload the font stylesheet asynchronously with low priority. -->
+<link rel="preload" as="style"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&family=Raleway:wght@600;800&display=swap" />
+
+<!-- Asynchronously load the font stylesheet and font file (after the content has been rendered) with JavaScript. -->
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&family=Raleway:wght@600;800&display=swap"
+      media="print" onload="this.media='all'" />
+
+<!-- Provide a fallback font for users with JavaScript turned off. -->
+<noscript>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&family=Raleway:wght@600;800&display=swap" />
+</noscript>
