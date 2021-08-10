@@ -28,6 +28,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: https://tiny-waste.com # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: tiny-waste
 github_username:  ali-hall
+cdn_root: https://d1qgb1tiajiucp.cloudfront.net/
 
 # Build settings
 plugins:
