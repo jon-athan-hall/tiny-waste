@@ -2,11 +2,41 @@
 <html>
   <head>
     {% include google-analytics.html %}
-    <title>{{ site.title }}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="description" content="{{ site.description }}">
+
+    <title>{{ site.title }}</title>
+
+    {% include google-font-load.html %}
+
     <link rel="stylesheet" href="/css/style.css">
+
+    <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url | replace: "index.html", "" }}">
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:url" content="{{ site.url }}{{ page.url | replace: "index.html", "" }}">
+    <meta property="og:title" content="{{ page.title }} | {{ site.title }}">
+    <meta property="og:description" content="{{ page.description }}">
+    <meta property="og:image" content="https://tiny-waste.com/assets/img/ali-killington.jpg">
+    <meta property="og:image:alt" content="profile of woman with mountain backdrop">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="{{ site.url }}">
+    <meta property="twitter:url" content="{{ site.url }}{{ page.url | replace: "index.html", "" }}">
+    <meta name="twitter:title" content="{{ page.title }} | {{ site.title }}">
+    <meta name="twitter:description" content="{{ page.description }}">
+    <meta name="twitter:image" content="https://tiny-waste.com/assets/img/ali-killington.jpg">
+    <meta property="og:url" content="{{ site.url }}{{ page.url | replace: "index.html", "" }}">
+  
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/my.webmanifest">
+    <meta name="theme-color" content="#06724d">
     <meta http-equiv="Content-Language" content="en">
     <script data-ad-client="ca-pub-2686458540481208" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </head>

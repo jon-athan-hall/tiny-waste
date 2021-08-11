@@ -25,9 +25,10 @@ description: >- # this means to ignore newlines until "baseurl:"
   sustainable environment from home. Change habits, craft projects,
   swap items, write letters, and more.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: https://tiny-waste.com # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: tiny-waste
+github_username:  ali-hall
+cdn_root: https://d1qgb1tiajiucp.cloudfront.net/
 
 # Build settings
 plugins:
