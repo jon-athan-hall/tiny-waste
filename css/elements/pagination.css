@@ -1,0 +1,29 @@
+.pagination {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: .5rem;
+  justify-content: space-between;
+}
+
+.pagination > span {
+  color: var(--light-green);
+  font-family: var(--font-body-text);
+  font-size: var(--scale-base);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.pagination a span {
+  display: none;
+}
+
+@media (min-width: 42rem) {
+  .pagination {
+    gap: 1rem;
+  }
+
+  .pagination a span {
+    display: inline;
+  }
+}

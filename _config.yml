@@ -33,12 +33,17 @@ cdn_root: https://d1qgb1tiajiucp.cloudfront.net/
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 # Other collections
 collections:
   weeks:
     output: true
     sort_by: number
+
+# Settings for paginating full blog list.
+paginate: 5
+paginate_path: blog/page:num/
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -2,8 +2,12 @@
 layout: default
 ---
 
+{% include pagination.html %}
+
 <section class="large spacious stack">
-  {% for latest in posts %}
+  {% for latest in paginator.posts %}
     {% include card.html post=latest %}
   {% endfor %}
 </section>
+
+{% include pagination.html %}

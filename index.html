@@ -15,7 +15,7 @@ layout: default
 </aside>
 
 <section class="stack">
-  {% for older_post in site.posts offset: 4 limit: 25 %}
+  {% for older_post in site.posts offset: 4 limit: 10 %}
     <div class="peek">
       <a class="border:none" href={{ older_post.url }}>
         {% include image-source-set.html image=older_post.image alt=older_post.alt %}
