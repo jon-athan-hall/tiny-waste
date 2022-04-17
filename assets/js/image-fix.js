@@ -1,3 +1,3 @@
 ---
 ---
-console.log("image fix!");
+console.log('image fix');

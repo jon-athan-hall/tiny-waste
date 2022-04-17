@@ -31,3 +31,27 @@ header > nav > .logo {
   text-shadow: 2px 2px 0 var(--light-green);
   text-transform: lowercase;
 }
+
+header > .search {
+  display: flex;
+  margin-top: var(--scale-down-1);
+  justify-content: flex-end;
+}
+
+header > .search label {
+  position: absolute;
+  left: 9999px;
+}
+
+header > .search input {
+  padding: var(--scale-down-2);
+  width: 16rem;
+  border: 2px solid var(--lighter-green);
+  border-radius: var(--scale-down-2);
+  font-weight: 700;
+  font-size: .75rem;
+}
+
+header > .search input:focus-visible {
+  outline: var(--light-green) auto 1px;
+}

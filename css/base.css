@@ -54,7 +54,12 @@ html, body, div, header, nav, main, footer {
   max-width: none;
 }
 
-nav {
+/**
+ * Not sure why nav is in here instead of header.css but
+ * whatever the reason, I also put .search here.
+ */
+nav,
+.search {
   max-width: calc((var(--measure) * 1.25) - var(--scale-base) * 2);
   margin-left: auto;
   margin-right: auto;

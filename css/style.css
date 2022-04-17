@@ -16,6 +16,7 @@
  */
 @import "/css/elements/button.css";
 @import "/css/elements/card.css";
+@import "/css/elements/columns.css";
 @import "/css/elements/header.css";
 @import "/css/elements/footer.css";
 @import "/css/elements/instructions.css";
@@ -24,4 +25,3 @@
 @import "/css/elements/post.css";
 @import "/css/elements/preview.css";
 @import "/css/elements/peek.css";
-@import "/css/elements/columns.css";
