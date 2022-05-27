@@ -9,6 +9,7 @@ const search = (() => {
     let searchTerms = searchValue.trim().split(' ');
 
     searchTerms.forEach((term, index, array) => {
+      array[index] = term.toLowerCase();
       if (term.slice(-1) === 's') {
         array[index] = term.slice(0, -1);
       }
@@ -17,7 +18,7 @@ const search = (() => {
 
     if (searchTerms.length > 0) {
       results = posts.filter((post) => {
-        return searchTerms.every((term) => post.content.includes(term));
+        return searchTerms.every((term) => post.content.toLowerCase().includes(term));
       });
     } else {
       results = [];
@@ -54,7 +55,6 @@ const search = (() => {
         anchor.setAttribute('target', '_blank');
         anchor.appendChild(document.createTextNode(result.title));
         categoryHeading.appendChild(document.createTextNode(result.category));
-        // categoryHeading.style.marginTop = '.75rem';
         content.appendChild(document.createTextNode(result.content.slice(0, 200) + '...'));
 
         postHeading.appendChild(anchor);
